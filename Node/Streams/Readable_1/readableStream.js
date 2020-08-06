@@ -1,5 +1,5 @@
-const rl = require('readline'); 
-const fs = require('fs'); 
+const rl = require('readline');
+const fs = require('fs');
 
 // ------------------------------------------METHOD 1
 
@@ -23,8 +23,12 @@ const fs = require('fs');
 // ---------------------------------------------------------METHOD 3
 fs.createReadStream('./readable_1.txt', {
     bufferSize: 4 * 1024
-}).addListener('data', (err, chunk) => {
-    if (err) {throw err};
-    console.log(chunk); 
+}).on('data', (err, chunk) => {
+    if (err) { throw err };
+    console.log(chunk);
 }); 
-    
+
+
+// process.stdin.on('data', data => {
+//     console.log(data); 
+// }); 
