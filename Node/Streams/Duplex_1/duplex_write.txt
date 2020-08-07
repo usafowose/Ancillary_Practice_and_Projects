@@ -1,0 +1,7 @@
+This is the orginal, readable text file 
+
+I am attempting to pipe the readable stream from this file to a writable stream with destination 'duplex_write.txt'
+
+this should write this same data in the write file. 
+
+it may even move it altogether. lets see
