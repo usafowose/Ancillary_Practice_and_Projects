@@ -9,4 +9,5 @@ let informUs = (data) => {
 fs.createReadStream('./duplex_read.txt', {
     bufferSize: 4 * 1024
 }).on('data', informUs)
-.pipe(fs.createWriteStream('./duplex_write.txt')); 
+    .pipe(fs.createWriteStream('./duplex_write.txt'));
+    
