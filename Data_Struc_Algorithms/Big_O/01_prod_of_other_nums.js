@@ -5,37 +5,19 @@
 // Test Case: [1,4,3,2] => [24,6,8,12]
 //            [4,5,10,6] => [300, 240, 120, 200]
 
-// 1. Have array argv
-// 2. Have empty return array 
-// 2. exclude current index from array 
-// 3 Multipy all elements from resulting array (reduce)
-// 4. Push result to empty array
+// exclude index 0
+// multiply remainder of indexes and push to array at index 0 .reduce()
+// 
 
-
-let test = [1,4,3,2]; 
-// let empty = []; 
-// (test.splice(3,1)); 
-// console.log(test); 
-
-const multiple = (arr) => {
-    let result= [];  
-    for (let i=0; i<3; i++) {
-         console.log((arr.splice(i,1))); 
-        console.log((arr.reduce((a,b) => a*b)))
-        
+var get_products_of_all_ints_except_at_index = (arr) => {
+    let prod = [];
+    for (let x of arr) {
+        let removed = arr.shift()
+        prod.push(arr.reduce((acc, cv) => acc * cv))
+        arr.push(removed)
     }
+    return prod;
 }
+    let arr = [1, 4, 3, 2]
+    console.log(get_products_of_all_ints_except_at_index(arr))
 
-multiple(test)
-
-
-// let exceptionalProduct = (arr) => {
-
-// }
-
-// class ExceptionalProduct {
-//     constructor (arr) {
-        
-//     }
-
-// }
