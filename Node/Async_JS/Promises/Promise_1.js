@@ -1,5 +1,3 @@
-const { resolve } = require("path");
-const { rejects } = require("assert");
 
 let certificates = [];
 

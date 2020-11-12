@@ -18,9 +18,15 @@ Callbacks became a popular method but soon presented a noticeable syntax problem
 
 The program requires the user to login. In order to login, the user must provide an email and password. The setTimeout() function in login() represents the time it takes to receive a response from the server that authenticates the user. Once this happens login responds with a user object containing the email as the userName. 
 
-getVideos() is another asynchronous task that, upon receving a userObject, returns a list of videos on that user profile, for example. The async nature of this function requires another callback that handles this data. When called, these functions must be nested with their callbacks to give us the synchronous nature we desire in the application. We do not want the program to tell us that we have no videos simply because we are still waiting on the login function to return with a success message. this nesting leads to callback hell. The code becomes more and more undecipherable the more async operations we have. Consequentially, in the event of any errors, such code becomes extremely labyrinthine and hard to debug. 
+getVideos() is another asynchronous task that, upon receving a userObject, returns a list of videos on that user profile, for example. The async nature of this function requires another callback that handles this data. When called, these functions must be nested with their callbacks to give us the synchronous nature we desire in the application. We do not want the program to tell us that we have no videos simply because we are still waiting on the login function to return with a success message. Extensive nesting leads to "callback hell". The code becomes more and more undecipherable the more asynchronous operations we have. Consequentially, in the event of any errors, separate error-handling callbacks are needed which result in further nesting. Such code becomes extremely labyrinthine and hard to debug. 
 
-This led us to Promises 
+This led us to Promises. 
 
 ## Promises
+
+To prevent callback hell, promises were introdcuced to javascript to handle asycnhronous operations more smoothly. A promise is simply an object that gives us either the result (in the case of success) of an asynchronous operation, or a failure/error message (in the event of a failure) of an async operation. 
+
+An elementary implementation of promises can be seen [here](./Promises/promise2.js). After, you can view the refactoring of our 
+
+
 

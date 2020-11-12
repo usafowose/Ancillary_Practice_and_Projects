@@ -1,17 +1,21 @@
-console.log('Start')
+// console.log('Start')
 
-const login = (email = ``, password) => {
-    setTimeout(() => {
-        console.log(`Now we have the data`)
-        return { userName: email }
-    }, 3000)
-}
+// const login = (email = ``, password) => {
+//     setTimeout(() => {
+//         console.log(`Now we have the data`)
+//         return { userName: email }
+//     }, 3000)
+// }
 
-let user = login('usafowose@gmail.com', 'hello');
+// login('usafowose@gmail.com', 'hello');
+// const getVideos = (user) => {
+// setTimeout(() => {
 
-console.log(user);
+// })
+// }
+// console.log(`Done`);
 
-console.log(`Done`);
+
 
 // ---------------------COMMENTS BEGIN----------------------------------
 
@@ -37,11 +41,31 @@ const getVideos = (email, returnVideoCb) => {
     }, 3000)
 }
 
-loginCallback('usafowose@gmail.com', 'hello', (user) => {
+const getVideoTitle = (video, callback) => {
+    setTimeout(() => {
+        console.log(`Video Title Has Come In`)
+        callback(video[0])
+    }, 4000)
+}
+
+const getTitleFirstLetter = (title, callback) => {
+    setTimeout(() => {
+        console.log(`The title has come back`)
+        callback(title[0]);
+    }, 3000)
+}
+
+login('usafowose@gmail.com', 'password', (user) => {
     console.log(user);
     getVideos(user.userName, (videos) => {
         console.log(videos);
-        console.log(`Finished`);
+        getVideoTitle(videos, (title) => {
+            console.log(`The Video Title Is: ${title}`);
+            getTitleFirstLetter(title, (firstLetter) => {
+                console.log(`First Letter Returned`)
+                console.log(`First Letter of ${title} is: "${firstLetter.toUpperCase()}"`)
+            })
+        })
     })
 });
 
