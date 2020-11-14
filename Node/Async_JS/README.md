@@ -24,9 +24,53 @@ This led us to Promises.
 
 ## Promises
 
-To prevent callback hell, promises were introdcuced to javascript to handle asycnhronous operations more smoothly. A promise is simply an object that gives us either the result (in the case of success) of an asynchronous operation, or a failure/error message (in the event of a failure) of an async operation. 
+To handle asycnhronous operations more smoothly and avoid callback hell, [promises](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises) were introdcuced to javascript. A promise is simply an object that gives us either the result (in the case of success) of an asynchronous operation, or a failure scenario/error message (in the event of a failure) of an async operation. 
 
-An elementary implementation of promises can be seen [here](./Promises/promise2.js). After, you can view the refactoring of our 
+### In Concept
+ The promise object serves as an intermediate state of an asynchronous operation. The word promise comes from the purpose of promises themselves. A promise (in js) serves the purpose of an actual promise to return some data to other processes that are waiting for this data or perform some action whenever it is loaded. The promise links the code that is grabbing the data (producing code) and the code that is awaiting the data (consuming code). 
+
+ The promise itself transitions through multiple states: 
+
+ 1. While we await the data or the result of the producing code, our promise is in a 'pending' state and our result is 'undefined'.
+ 
+ 2. If data comes back and we resolve the promise, then the state of our promise is now 'fulfilled' and result is whatever our producing code returns. 
+ 
+ 3. In the event of any errors and promise rejection, our promise moves to a 'rejected' state and our result is an error. 
+
+ It is important to know that the purpose of promises themselves is to handle an asynchronous task gracefully regardless of the result. In the event odf errors in an async operation, we still wouldn't want our program to stop because of an error. Promises allow us to choose how to handle these errors and continue with program execution. 
+
+
+
+### In Action
+ Promisies are implemented using the 'new' keyword. The Promise takes in an executor function as a callback. This executor function has two arguments which, in common practice, are called resolve and reject. 
+
+ The resolve parameter is used in the event of a promise resolution or returned data. on the contrary, the reject param is to return a rejected state of a promise on the event 
+
+ ```js
+ const fulfilledExecutor = (resolve, reject) => {
+     setTimeout(() => {
+         resolve(`We got the data`)
+     }, 2000)
+ }
+
+const rejectedExecutor = (resolve, reject) => {
+    setTimeout(() => {
+        reject(new Error(`Something went wrong`))
+    }, 2000)
+}
+ const fulfilledPromise = new Promise(fulfilledExecutor)
+ const rejectedPromise = new Promise(rejectedExecutor)
+
+ console.log(fulfilledPromise) //expect a return value of type string after 2 seconds: `We got the data`
+
+ console.log(rejectedPromise) //expect an error message to be returned : `Something went wrong`
+
+ ```
+
+Another elementary but logical implementation of promises can be seen [here](./Promises/promise2.js). 
+For further understanding, you can view the refactoring of our [login callbacks using promises here](./Promises/loginPromise.js)
+
+## Async Await
 
 
 
