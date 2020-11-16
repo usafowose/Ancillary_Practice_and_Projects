@@ -41,10 +41,10 @@ const getVideos = (email, returnVideoCb) => {
     }, 3000)
 }
 
-const getVideoTitle = (video, callback) => {
+const getVideoTitle = (videos, callback) => {
     setTimeout(() => {
         console.log(`Video Title Has Come In`)
-        callback(video[0])
+        callback(videos[0])
     }, 4000)
 }
 
