@@ -1,8 +1,7 @@
 // Synchronous Code
+const secondConsole = () => console.log('This is the second task: `The main functionality of our program`')
 
 console.log('Begin Synchronous Task');
-
-const secondConsole = () => console.log('This is the second task: `The main functionality of our program`')
 
 secondConsole();
 
