@@ -61,16 +61,52 @@ const rejectedExecutor = (resolve, reject) => {
  const fulfilledPromise = new Promise(fulfilledExecutor)
  const rejectedPromise = new Promise(rejectedExecutor)
 
- console.log(fulfilledPromise) //expect a return value of type string after 2 seconds: `We got the data`
+ console.log(fulfilledPromise) //expect a return value of type string after two seconds: `We got the data`
 
- console.log(rejectedPromise) //expect an error message to be returned : `Something went wrong`
+ console.log(rejectedPromise) //expect an error message to be returned after two seconds : `Something went wrong`
 
  ```
 
 Another elementary but logical implementation of promises can be seen [here](./Promises/promise2.js). 
 For further understanding, you can view the refactoring of our [login callbacks using promises here](./Promises/loginPromise.js)
 
-## Async Await
+## Async/Await
 
+Async-Await was introduced in Javascript ES8 as only a syntactic feature that allowed asynchronous operations to be structured in a synchronous way. 
+
+### Implementation
+Async-Await functions are declared by using the async keyword in the declaration of functions. Async functions must return a promise or promise-like response. 
+
+Here is an example of rewriting an asynchronous operation that uses thenables (.then()) into an asynchronous function using async/await syntax. 
+```js 
+// NORMAL SYNTAX 
+function loadJson(url) {
+  return fetch(url)
+    .then(response => {
+      if (response.status == 200) {
+        return response.json();
+      } else {
+        throw new Error(response.status);
+      }
+    });
+}
+
+loadJson('no-such-user.json')
+  .catch(alert)
+
+
+// USING ASYNC AWAIT
+
+const loadJson = async (url) => {
+  try{
+    let response = await fetch(url);
+    response.status === 200 ? await response.json() : throw new Error(response.status)
+  } catch (err) {
+    alert(err)
+  }
+}
+
+loadJson('no-such-user.json') // ERROR HANDLING OCCURS INSIDE FUNCTION
+```
 
 
