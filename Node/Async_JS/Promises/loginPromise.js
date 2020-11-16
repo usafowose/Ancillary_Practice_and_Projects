@@ -1,8 +1,9 @@
 const login = (email = ``, password) =>
     new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log(`Now we have the data`)
-            resolve({ userName: email })
+            console.log(`Now we have something`)
+            reject(new Error(`We couldn't grab the data`))
+            // resolve({ userName: email })
         }, 2000)
     })
 
@@ -35,13 +36,14 @@ const getTitleFirstLetter = (vidTitle) =>
 // login(`usafowose@gmail.com`, `password`)
 //     .then(result => getVideos(result.userName, `password`))
 //     .then(result => getVideoTitle(result))
-    // .then(result => getTitleFirstLetter(result))
+//     .then(result => getTitleFirstLetter(result))
+//     .catch(err => console.log(err))
 
 
-login(`usafowose@gmail.com`, `password`).then(getVideos).then(getVideoTitle).then(getTitleFirstLetter);
+login(`usafowose@gmail.com`, `password`)
+    .then(getVideos)
+    .then(getVideoTitle)
+    .then(getTitleFirstLetter)
+    .catch(err => console.log(err))
 
-// Promise.all(
-//     [login(`usafowose@gmail.com`, `password`), getVideos(`usafowose@gmail.com`, `password`), getVideoTitle(result), getTitleFirstLetter(result) ]
-//     )
-//     .then(allResults => console.log(allResults))
 
