@@ -2,21 +2,31 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import SeasonDisplay from './SeasonDisplay';
 import "semantic-ui-css/semantic.min.css"
+import LoadingSpinner from './LoadingSpinner'
+import ErrorPage from './ErrorPage'
 
 class App extends React.Component {
-  // state can be intialized outside of constructor --often done...use w/o this outside of constructor
-  // if nothing other than state is intitialize dinside contructor, construc and props can be removed and state can be intialized like below. 
+  // state can be intialized outside of constructor --often done...use w/o 'this' outside of constructor
+  // if nothing other than state is intitialized inside contructor, construc and props can be removed and state can be intialized like below. 
   // babel will compile this to establish constructor, etc
 
   state = { lat: null, errorMessage: '' }
 
-  render() {
+  renderContent() {
     return (
       (this.state.errorMessage && !this.state.lat) ?
-        <div>Error: {this.state.errorMessage}</div>
+        <ErrorPage message={`We're Not Authorized To View Your Location`} />
         : (this.state.lat && !this.state.errorMessage) ?
           <SeasonDisplay lat={this.state.lat} />
-          : <div>Loading!</div>
+          : <LoadingSpinner message='Waiting On Location Authorization' />
+    )
+  }
+
+  render() {
+    return (
+      <div style={{border:`10px solid red`}}>
+        {this.renderContent()}
+      </div>
     )
   }
 
