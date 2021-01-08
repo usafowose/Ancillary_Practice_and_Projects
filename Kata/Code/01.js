@@ -14,19 +14,19 @@
 // given an array --< and number n; 
 
 var sum = (arr, n) => {
-    var sortedGtoL = arr.sort((a, b) => b - a).slice(0, n)
+    var sortedGtoL = [...arr].sort((a, b) => b - a).slice(0, n)
     return sortedGtoL.reduce((acc, cv) => acc + cv)
 }
 
 var prod = (arr, n) => {
-    var sortedLtoG = arr.sort((a, b) => a - b).slice(0, n)
+    var sortedLtoG = [...arr].sort((a, b) => a - b).slice(0, n)
     return sortedLtoG.reduce((acc, cv) => acc * cv)
 }
 
 const sumOrProduct = (arr, n) => {
-    let Sum = sum(arr, n)
-    let Prod = prod(arr, n)
-    return Sum > Prod ? `sum` : Prod < Sum ? `product` : `same`
+    let Sum = sum(arr, n);
+    let Prod = prod(arr, n);
+    return Sum > Prod ? `sum` : Prod > Sum ? `product` : `same`
 };
 
 

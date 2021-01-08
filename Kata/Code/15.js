@@ -13,9 +13,8 @@ const howMany = (str) => {
     arrofOccur.push(str.match(new RegExp(cv, 'g')))
   })
 
-  let arrtoObjs = arrofOccur.map((currentVal, i) => ({ [currentVal[0]]: currentVal.length }))
-
-  return arrtoObjs.reduce((acc, cv) => ({ ...acc, ...cv }), {})
+  return arrofOccur.map((currentVal, i) => ({ [currentVal[0]]: currentVal.length }))
+    .reduce((acc, cv) => ({ ...acc, ...cv }), {})
 }
 
-console.log(howMany('together'))
+console.log(howMany('isthisright'))

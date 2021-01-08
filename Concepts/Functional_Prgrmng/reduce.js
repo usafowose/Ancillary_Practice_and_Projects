@@ -8,11 +8,13 @@ let min = arr.reduce((acc, cv) => Math.min(acc, cv), 1000)
 
 let minAndMax = arr.reduce((acc, cv) => [Math.min(acc[0], cv), Math.max(acc[1], cv)], [1000, 0])
 
-console.log({
-    min: min,
-    max: max,
-    minMxArr: minAndMax
-})
+console.log(
+    {
+        min: min,
+        max: max,
+        minMxArr: minAndMax
+    }
+)
 
 
 const students = [
@@ -26,6 +28,8 @@ let studentObj = students.reduceRight((acc, { name, age, pass }) => {
     return { ...acc, [name]: { name, age, pass } }
 }, {})
 
+console.log(studentObj)
+
 // OR
 // acc[name] = {name, age, pass}; 
 // return acc; 
@@ -36,10 +40,12 @@ let studentObj2 = Object.keys(studentObj).map(key => {
     return { [key]: studentObj[key] }
 })
 
+console.log(studentObj2)
+
 
 
 const colors = [1, 3, 5, 7, 9, 2, 4, 6, 8, 11, 11, 21, 3, 5, 7]
 
 let onlyOnce = colors.reduce((acc, cv) => acc.indexOf(cv) !== -1 ? acc : [...acc, cv], [])
 
-console.log(onlyOnce);
+// console.log(onlyOnce);

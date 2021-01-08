@@ -20,3 +20,4 @@ const studentActions = {
     }
 };
 console.log(studentActions.legalAge(students));
+

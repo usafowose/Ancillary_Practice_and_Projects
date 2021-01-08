@@ -7,5 +7,5 @@ console.log(notYet);
 let peaks = ['Me', 'You']; 
 let no = ['You', 'Me']; 
 let noPeaks = [...peaks, ...no, ...students]; 
-
-console.log(noPeaks.join(', '))
+console.log(noPeaks)
+console.log(noPeaks.join())
