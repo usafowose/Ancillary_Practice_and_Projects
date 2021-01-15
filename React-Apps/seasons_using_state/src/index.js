@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import SeasonDisplay from './SeasonDisplay';
+import SeasonDisplay from './components/SeasonDisplay/SeasonDisplay';
 import "semantic-ui-css/semantic.min.css"
-import LoadingSpinner from './LoadingSpinner'
-import ErrorPage from './ErrorPage'
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner'
+import ErrorPage from './components/ErrorPage/ErrorPage'
 
 class App extends React.Component {
   // state can be intialized outside of constructor --often done...use w/o 'this' outside of constructor
@@ -24,7 +24,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div style={{border:`10px solid red`}}>
+      <div style={{ border: `10px solid red` }}>
         {this.renderContent()}
       </div>
     )

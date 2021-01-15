@@ -11,7 +11,6 @@ class SearchBar extends React.Component {
   handleFormSubmit = event => {
     event.preventDefault();
     this.props.handleSearch(this.state.term);
-    // TODO ---- Call some callback that is passed into SearchBar as props from App Component
   }
 
   render() {
@@ -33,6 +32,7 @@ class SearchBar extends React.Component {
       </div>
     )
   }
+
 }
 
-export default SearchBar
+export default SearchBar;

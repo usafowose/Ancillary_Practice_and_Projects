@@ -7,7 +7,6 @@ import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
 
 
-
 class App extends React.Component {
 
   state = {
@@ -16,19 +15,16 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.handleVideoSearch('');
+    this.handleVideoSearch('')
   }
 
-
   handleVideoSearch = async term => {
-
     const response = await youtube.get('/search', {
       params: {
         q: term
       }
-    })
+    });
 
-    console.log(response.data.items)
     this.setState({
       videos: response.data.items,
       selectedVideo: response.data.items[0]
@@ -57,6 +53,7 @@ class App extends React.Component {
       </div>
     )
   }
+
 }
 
 export default App; 
