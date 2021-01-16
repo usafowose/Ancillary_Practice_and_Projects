@@ -6,9 +6,14 @@ class Image extends React.Component {
   state = { clickedAlready: false }
 
   handleClickEvent = (e) => {
-    this.state.clickedAlready ? this.props.increaseScore() : this.setState({ clickedAlready: true })
 
-    // TO-DO : Fix This Logic Its Wrong
+    if (this.state.clickedAlready) {
+      return
+      // Find A Way to restart game? Here or app?
+    } else {
+      this.props.increaseScore();
+      this.setState({ clickedAlready: true })
+    }
   }
 
 
