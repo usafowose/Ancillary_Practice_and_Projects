@@ -4,9 +4,9 @@ const Header = (props) => {
   return (
     <div>
       <header>
-        <h6>React Rememberace</h6>
+        <h4>React Rememberace</h4>
         <h1> Clicky game</h1>
-        <h6>Hello {props.score}</h6>
+        <p>Score: {props.score}</p>
       </header>
     </div>
   )
