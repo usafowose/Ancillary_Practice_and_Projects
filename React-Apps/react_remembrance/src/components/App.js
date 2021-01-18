@@ -30,16 +30,16 @@ class App extends React.Component {
           <div className='ui segment'>
             <div className='ui four column grid'>
 
-              {this.array.map((cv, i, arr) => {
+              {[...this.array].map((cv, i, arr) => {
                 return (
-                  <div className='four wide column' key={cv}>
-                    <Image
-                      content = { cv }
-                      score={this.state.score}
-                      increaseScore={this.handleScoreIncrement}
-                      restart={this.handleRestart}
-                    />
-                  </div>
+                  <Image
+                    key={i}
+                    content={cv}
+                    score={this.state.score}
+                    increaseScore={this.handleScoreIncrement}
+                    restart={this.handleRestart}
+                  />
+
                 )
               })
               }

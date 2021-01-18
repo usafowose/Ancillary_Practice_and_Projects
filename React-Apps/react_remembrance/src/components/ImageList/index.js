@@ -33,8 +33,13 @@ class Image extends React.Component {
     const { content } = this.props
 
     return (
-      <div onClick={this.handleClickEvent}>
-        {content}
+      <div
+        onClick={this.handleClickEvent}
+        className='four wide column'
+        style={{ 'border': '1px solid grey' }}>
+        <div >
+          {content}
+        </div>
       </div>
 
 
