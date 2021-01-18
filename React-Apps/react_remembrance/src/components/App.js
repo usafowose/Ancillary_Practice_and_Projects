@@ -9,7 +9,7 @@ import Image from './ImageList'
 // TO-DO : Conditionally restart the game
 class App extends React.Component {
   state = { score: 0 };
-  array = [1, 2, 3]
+  array = [1, 2, 3, 4, 5, 6, 7]
 
   handleScoreIncrement = (e) => {
     this.setState({ score: this.state.score + 1 })
@@ -23,20 +23,28 @@ class App extends React.Component {
   render() {
 
     return (
+
       <div>
         <Header score={this.state.score} />
-        {this.array.map((cv, i, arr) => {
-          return (
-            <div key={cv}>
-              <Image
-                score={this.state.score}
-                increaseScore={this.handleScoreIncrement}
-                restart={this.handleRestart}
-              />
+        <div className='ui container'>
+          <div className='ui segment'>
+            <div className='ui four column grid'>
+
+              {this.array.map((cv, i, arr) => {
+                return (
+                  <div className='four wide column' key={cv}>
+                    <Image
+                      score={this.state.score}
+                      increaseScore={this.handleScoreIncrement}
+                      restart={this.handleRestart}
+                    />
+                  </div>
+                )
+              })
+              }
             </div>
-          )
-        })
-        }
+          </div>
+        </div>
 
       </div>
     )
