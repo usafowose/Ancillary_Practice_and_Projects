@@ -24,8 +24,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header
-          score={this.state.score} />
+        <Header score={this.state.score} />
         {this.array.map((cv, i, arr) => {
           return (
             <div key={cv}>
