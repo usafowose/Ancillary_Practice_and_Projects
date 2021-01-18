@@ -20,8 +20,10 @@ class App extends React.Component {
     this.setState({ score: 0 })
   }
 
-  render() {
+  shuffle = (arr) => arr.sort(() => Math.random() - 0.5)
 
+  render() {
+    
     return (
 
       <div>
@@ -30,7 +32,7 @@ class App extends React.Component {
           <div className='ui segment'>
             <div className='ui four column grid'>
 
-              {[...this.array].map((cv, i, arr) => {
+              {[...this.shuffle(this.array)].map((cv, i, arr) => {
                 return (
                   <Image
                     key={i}
