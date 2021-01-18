@@ -4,26 +4,25 @@ import React from 'react';
 class Image extends React.Component {
 
   state = {
-    clickedAlready: false,
-    score: this.props.score
+    clickedAlready: false
   }
 
-
-  handleRestart = () => {
-    this.props.restart();
-    if (this.props.score === 0) {
+  componentDidUpdate = (prevProps) => {
+    if (prevProps.score !== this.props.score && this.props.score === 0) {
       this.setState({ clickedAlready: false })
     }
   }
 
 
   handleClickEvent = (e) => {
-    if (this.state.clickedAlready) {
+    const { clickedAlready } = this.state
+    const { restart, increaseScore } = this.props
+
+    if (clickedAlready) {
       alert('Clicked Already')
-      this.handleRestart()
-      this.setState({ clickedAlready: false })
+      restart()
     } else {
-      this.props.increaseScore();
+      increaseScore();
       this.setState({ clickedAlready: true })
     }
     console.log(this.state.score)
