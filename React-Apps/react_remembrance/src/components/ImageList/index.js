@@ -30,9 +30,11 @@ class Image extends React.Component {
 
 
   render() {
+    const { content } = this.props
+
     return (
       <div onClick={this.handleClickEvent}>
-        Image Would Go Here
+        {content}
       </div>
 
 
