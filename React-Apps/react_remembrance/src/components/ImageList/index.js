@@ -31,10 +31,16 @@ class Image extends React.Component {
 
   render() {
     return (
-      <div
-        style={{ border: '1px solid red', marginTop: 5 }}
-        onClick={this.handleClickEvent}>Image Would Go Here
+      <div onClick={this.handleClickEvent}>
+        Image Would Go Here
       </div>
+
+
+
+      // <div
+      //   style={{ border: '1px solid red', marginTop: 5 }}
+      //   onClick={this.handleClickEvent}>Image Would Go Here
+      // </div>
     )
   }
 }
