@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Header = (props) => {
+const Header = ({ score }) => {
   return (
     <div>
       <header>
         <h4>React Rememberace</h4>
         <h1> Clicky game</h1>
-        <p>Score: {props.score}</p>
+        <p>Score: {score}</p>
       </header>
     </div>
   )
