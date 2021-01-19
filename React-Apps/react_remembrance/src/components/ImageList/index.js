@@ -14,18 +14,18 @@ class Image extends React.Component {
   }
 
 
-  handleClickEvent = (clickedVal) => {
-    const { clickedAlready } = this.state
-    const { restart, increaseScore, content } = this.props
+  handleClickEvent = (e) => {
+    const { increaseScore, content } = this.props
 
-    if (clickedAlready) {
-      alert('Clicked Already')
-      restart()
-    } else {
+    let sourceUrl = e.target.src;
+
+    if (sourceUrl.includes(content)) {
       increaseScore(content);
       this.setState({ clickedAlready: true })
+    } else {
+      return
     }
-    console.log(this.state.score)
+
   }
 
 
@@ -33,15 +33,15 @@ class Image extends React.Component {
     const { content } = this.props
 
     return (
-      <div
+      <img
+        alt='broccoli'
+        src={content}
         onClick={this.handleClickEvent}
         className='four wide column'
         style={{ 'border': '1px solid grey' }}>
-        <div >
-          {content}
-          {/* <img src={imgSrc}></img> */}
-        </div>
-      </div>
+        {/* <img src={imgSrc}></img> */}
+
+      </img>
 
 
 
