@@ -14,15 +14,15 @@ class Image extends React.Component {
   }
 
 
-  handleClickEvent = (e) => {
+  handleClickEvent = (clickedVal) => {
     const { clickedAlready } = this.state
-    const { restart, increaseScore } = this.props
+    const { restart, increaseScore, content } = this.props
 
     if (clickedAlready) {
       alert('Clicked Already')
       restart()
     } else {
-      increaseScore();
+      increaseScore(content);
       this.setState({ clickedAlready: true })
     }
     console.log(this.state.score)
@@ -30,7 +30,7 @@ class Image extends React.Component {
 
 
   render() {
-    const { content} = this.props
+    const { content } = this.props
 
     return (
       <div
