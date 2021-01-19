@@ -11,10 +11,15 @@ import ImageArray from './ImageArray';
 class App extends React.Component {
   state = {
     score: 0,
-    clickedValues: []
+    clickedValues: [],
+    highScore: 0
   };
 
   images = ImageArray
+
+  componentDidUpdate = (prevProps) => {
+    const getHighScore = (prevProps) => Math.min(prevP)
+  }
 
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
@@ -22,7 +27,8 @@ class App extends React.Component {
     if (clickedValues.indexOf(clickedVal) === -1) {
       this.setState({
         score: this.state.score + 1,
-        clickedValues: [...this.state.clickedValues, clickedVal]
+        clickedValues: [...this.state.clickedValues, clickedVal],
+        highScore: 0
       })
     } else {
       alert('Clicked Already')
