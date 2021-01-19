@@ -8,11 +8,12 @@ class Image extends React.Component {
   }
 
   componentDidUpdate = (prevProps) => {
+
     if (prevProps.score !== this.props.score && this.props.score === 0) {
       this.setState({ clickedAlready: false })
     }
-  }
 
+  }
 
   handleClickEvent = (e) => {
     const { increaseScore, content } = this.props
@@ -39,16 +40,8 @@ class Image extends React.Component {
         onClick={this.handleClickEvent}
         className='four wide column'
         style={{ 'border': '1px solid grey' }}>
-        {/* <img src={imgSrc}></img> */}
-
       </img>
 
-
-
-      // <div
-      //   style={{ border: '1px solid red', marginTop: 5 }}
-      //   onClick={this.handleClickEvent}>Image Would Go Here
-      // </div>
     )
   }
 }
