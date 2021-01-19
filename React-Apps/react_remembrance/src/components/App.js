@@ -12,13 +12,21 @@ class App extends React.Component {
     score: 0,
     clickedValues: []
   };
+
   array = ['a', 'b', 'c', 'd', 'e', 'f']
 
   handleScoreIncrement = (clickedVal) => {
-    this.setState({
-      score: this.state.score + 1,
-      clickedValues: [...this.state.clickedValues, clickedVal]
-    })
+    const { clickedValues } = this.state;
+
+    if (clickedValues.indexOf(clickedVal) === -1) {
+      this.setState({
+        score: this.state.score + 1,
+        clickedValues: [...this.state.clickedValues, clickedVal]
+      })
+    } else {
+      alert('CLicked Already')
+      this.handleRestart()
+    }
     // console.log(this.state)
     console.log(clickedVal)
   }
@@ -40,14 +48,14 @@ class App extends React.Component {
           <div className='ui segment'>
             <div className='ui four column grid'>
 
-              {[...this.array].map((cv, i, arr) => {
+              {[...this.array].map((image, i, arr) => {
                 return (
                   <Image
                     key={i}
-                    content={cv}
+                    content={image}
                     score={this.state.score}
                     increaseScore={this.handleScoreIncrement}
-                    restart={this.handleRestart}
+
                   />
 
                 )
