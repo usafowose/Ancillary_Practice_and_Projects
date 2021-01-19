@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header'
 import Image from './ImageList'
+import ImageArray from './ImageArray';
 
 // LOGIC 
 // 1. Keep Tabs of Score
@@ -13,7 +14,7 @@ class App extends React.Component {
     clickedValues: []
   };
 
-  array = ['a', 'b', 'c', 'd', 'e', 'f']
+  images = ImageArray
 
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
@@ -38,8 +39,9 @@ class App extends React.Component {
   shuffle = (arr) => arr.sort(() => Math.random() - 0.5)
 
   render() {
-    this.shuffle(this.array)
+    this.shuffle(this.images)
     console.log(this.state)
+    console.log(this.images)
     return (
 
       <div>
@@ -48,7 +50,7 @@ class App extends React.Component {
           <div className='ui segment'>
             <div className='ui four column grid'>
 
-              {[...this.array].map((image, i, arr) => {
+              {[...this.images].map((image, i, arr) => {
                 return (
                   <Image
                     key={i}
