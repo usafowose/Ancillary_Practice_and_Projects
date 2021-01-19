@@ -15,19 +15,23 @@ class App extends React.Component {
   array = ['a', 'b', 'c', 'd', 'e', 'f']
 
   handleScoreIncrement = (clickedVal) => {
-    this.setState({ score: this.state.score + 1 })
-    console.log(this.state.score)
+    this.setState({
+      score: this.state.score + 1,
+      clickedValues: [...this.state.clickedValues, clickedVal]
+    })
+    // console.log(this.state)
     console.log(clickedVal)
   }
 
   handleRestart = () => {
-    this.setState({ score: 0 })
+    this.setState({ score: 0, clickedValues: [] })
   }
 
   shuffle = (arr) => arr.sort(() => Math.random() - 0.5)
 
   render() {
     this.shuffle(this.array)
+    console.log(this.state)
     return (
 
       <div>
