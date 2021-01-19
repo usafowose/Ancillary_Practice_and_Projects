@@ -17,7 +17,7 @@
 // Night 5: {Drew: 50, Queen: 50, Roland: 50, Jalen: 50}
 
 
-// Output: {Drew: 366.67, Queen: 366.67, Roland: 166.67, Jalen: 100}
+// Total Cost Output: {Drew: 366.67, Queen: 366.67, Roland: 166.67, Jalen: 100}
 
 // 
 
@@ -33,8 +33,9 @@
 // Queen staying 5 nights pays 5/15 of cost
 // Jalen Staying 3 Nights pays 3/15 of cost
 // Roland Staying 2 nights pays 2/15 of cost
+// 
 
-// 100/2000 = 10% --Jalen ... How? (Math-wise)
+// 100/1000 = 10% --Jalen ... How? (Math-wise)
 
 // 4people = 20 nights
 // 5 = 1/4 of nights
@@ -61,5 +62,4 @@ const calculateStay = (itinerary = {}, perNightCost) => {
   let nightly = perNightCost;
 
 }
-
 
