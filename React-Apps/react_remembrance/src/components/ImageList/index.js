@@ -30,7 +30,7 @@ class Image extends React.Component {
 
 
   render() {
-    const { content } = this.props
+    const { content} = this.props
 
     return (
       <div
@@ -39,6 +39,7 @@ class Image extends React.Component {
         style={{ 'border': '1px solid grey' }}>
         <div >
           {content}
+          {/* <img src={imgSrc}></img> */}
         </div>
       </div>
 
