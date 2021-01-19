@@ -25,7 +25,7 @@ class App extends React.Component {
         clickedValues: [...this.state.clickedValues, clickedVal]
       })
     } else {
-      alert('CLicked Already')
+      alert('Clicked Already')
       this.handleRestart()
     }
     // console.log(this.state)
