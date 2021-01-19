@@ -8,12 +8,16 @@ import Image from './ImageList'
 
 // TO-DO : Score Based on Image/Letter CLicked Not Div
 class App extends React.Component {
-  state = { score: 0 };
+  state = {
+    score: 0,
+    clickedValues: []
+  };
   array = ['a', 'b', 'c', 'd', 'e', 'f']
 
-  handleScoreIncrement = (e) => {
+  handleScoreIncrement = (clickedVal) => {
     this.setState({ score: this.state.score + 1 })
     console.log(this.state.score)
+    console.log(clickedVal)
   }
 
   handleRestart = () => {
