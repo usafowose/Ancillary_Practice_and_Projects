@@ -6,7 +6,7 @@ import Image from './ImageList'
 // 1. Keep Tabs of Score
 // 2. Restart Game Condition
 
-// TO-DO : Conditionally restart the game
+// TO-DO : Score Based on Image/Letter CLicked Not Div
 class App extends React.Component {
   state = { score: 0 };
   array = ['a', 'b', 'c', 'd', 'e', 'f']
