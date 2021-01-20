@@ -9,16 +9,18 @@ import ImageArray from './ImageArray';
 
 // TO-DO : Score Based on Image/Letter CLicked Not Div
 class App extends React.Component {
+
   state = {
     score: 0,
     clickedValues: [],
-    highScore: window.sessionStorage.getItem('highScore')
+    highScore: 0
   };
 
   images = ImageArray
 
   componentDidMount() {
     window.sessionStorage.setItem('highScore', this.state.score)
+    this.setState({ highScore: parseInt(window.sessionStorage.getItem('highScore')) })
   }
 
   componentDidUpdate = (prevProps, prevState) => {
@@ -30,30 +32,29 @@ class App extends React.Component {
   }
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
+    const highScore = window.sessionStorage.getItem('highScore')
 
     if (clickedValues.indexOf(clickedVal) === -1) {
       this.setState({
         score: this.state.score + 1,
         clickedValues: [...this.state.clickedValues, clickedVal],
+        highScore: highScore
       })
     } else {
       alert('Clicked Already')
       this.handleRestart()
     }
-    // console.log(this.state)
-    // console.log(clickedVal)
+
   }
 
   handleRestart = () => {
-    this.setState({ score: 0, clickedValues: [] })
+    this.setState({ score: 0, clickedValues: [], highScore: parseInt(window.sessionStorage.getItem('highScore')) })
   }
 
   shuffle = (arr) => arr.sort(() => Math.random() - 0.5)
 
   render() {
     this.shuffle(this.images)
-    // console.log(this.state)
-    console.log(window.sessionStorage)
 
     return (
 
