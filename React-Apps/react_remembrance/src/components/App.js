@@ -19,7 +19,6 @@ class App extends React.Component {
   images = ImageArray
 
   componentDidMount() {
-    window.sessionStorage.setItem('highScore', this.state.score)
     this.setState({ highScore: parseInt(window.sessionStorage.getItem('highScore')) })
   }
 
