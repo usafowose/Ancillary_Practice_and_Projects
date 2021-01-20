@@ -12,15 +12,22 @@ class App extends React.Component {
   state = {
     score: 0,
     clickedValues: [],
-    highScore: 0
+    highScore: window.sessionStorage.getItem('highScore')
   };
 
   images = ImageArray
 
-  componentDidUpdate = (prevProps) => {
-    const getHighScore = (prevProps) => Math.min(prevP)
+  componentDidMount() {
+    window.sessionStorage.setItem('highScore', this.state.score)
   }
 
+  componentDidUpdate = (prevProps, prevState) => {
+    if (window.sessionStorage.getItem('highScore') < this.state.score) {
+      window.sessionStorage.setItem('highScore', this.state.score)
+    } else {
+      return
+    }
+  }
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
 
@@ -28,14 +35,13 @@ class App extends React.Component {
       this.setState({
         score: this.state.score + 1,
         clickedValues: [...this.state.clickedValues, clickedVal],
-        highScore: 0
       })
     } else {
       alert('Clicked Already')
       this.handleRestart()
     }
     // console.log(this.state)
-    console.log(clickedVal)
+    // console.log(clickedVal)
   }
 
   handleRestart = () => {
@@ -46,12 +52,15 @@ class App extends React.Component {
 
   render() {
     this.shuffle(this.images)
-    console.log(this.state)
-    console.log(this.images)
+    // console.log(this.state)
+    console.log(window.sessionStorage)
+
     return (
 
       <div>
-        <Header score={this.state.score} />
+        <Header
+          score={this.state.score}
+          highScore={this.state.highScore} />
         <div className='ui container'>
           <div className='ui segment'>
             <div className='ui four column grid'>
