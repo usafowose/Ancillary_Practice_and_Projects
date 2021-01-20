@@ -56,6 +56,7 @@ class App extends React.Component {
   render() {
     this.shuffle(this.images)
 
+
     return (
 
       <div>
