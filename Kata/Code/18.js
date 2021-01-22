@@ -18,7 +18,7 @@ let arr = [-3, -2, -1, 100000]
 
 // let arr2 = [];
 let start = 1
-while (start < 99998) {
+while (start < 99999) {
   arr.push(start)
   start++
 }
