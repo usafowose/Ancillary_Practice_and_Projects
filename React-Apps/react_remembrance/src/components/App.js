@@ -19,16 +19,16 @@ class App extends React.Component {
   images = ImageArray
 
   componentDidMount() {
-    this.setState({ highScore: parseInt(window.sessionStorage.getItem('highScore')) })
+    let startingScore = window.sessionStorage.getItem('highScore')
+    if (startingScore) this.setState({ highScore: parseInt(startingScore) })
+
   }
 
   componentDidUpdate = (prevProps, prevState) => {
     if (window.sessionStorage.getItem('highScore') < this.state.score) window.sessionStorage.setItem('highScore', this.state.score)
 
   }
-  handleScoreIncrement = (clickedVal) => {
-    const { clickedValues } = this.state;
-    const highScore = window.sessionStorage.getItem('highScore')
+  
 
     if (clickedValues.indexOf(clickedVal) === -1) {
       this.setState({
@@ -68,10 +68,7 @@ class App extends React.Component {
                     content={image}
                     score={this.state.score}
                     increaseScore={this.handleScoreIncrement}
-
-                  />
-
-                )
+                  />)
               })
               }
             </div>
