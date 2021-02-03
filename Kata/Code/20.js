@@ -3,7 +3,7 @@ const likes = (names) => {
   let returnStatmnt = ''
   switch (names.length) {
     case 0:
-      returnStatmnt = 'no one likes this'
+      returnStatmnt = `no one likes this`
       break;
     case 1:
       returnStatmnt = `${names[0]} likes this`

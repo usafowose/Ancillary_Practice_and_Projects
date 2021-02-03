@@ -1,4 +1,6 @@
 const isPalindrome = (str = '') => {
+
+  if (typeof str !== 'string') return `Not A String`
   let string = [...str];
   // first loop would start @ 0th index
   // inner loop starts at the end
@@ -14,10 +16,10 @@ const isPalindrome = (str = '') => {
     if (string[i] !== string[j]) return false;
     if (i === j) break
     i++;
-    j--
+    j--;
   }
   return ((i + j === string.length - 1) && j - i <= 1) ? true : false
 
 }
 
-console.log(isPalindrome('acecar'))
+console.log(isPalindrome('tattarrattat'))
