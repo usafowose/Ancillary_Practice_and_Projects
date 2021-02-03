@@ -33,14 +33,12 @@ class App extends React.Component {
     if (clickedValues.indexOf(clickedVal) === -1) {
       this.setState({
         score: this.state.score + 1,
-        clickedValues: [...this.state.clickedValues, clickedVal],
-        highScore: highScore
+        clickedValues: [...this.state.clickedValues, clickedVal]
       })
     } else {
       alert('Clicked Already')
       this.handleRestart()
     }
-
   }
 
   handleRestart = () => {
