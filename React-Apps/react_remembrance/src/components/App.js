@@ -23,11 +23,8 @@ class App extends React.Component {
   }
 
   componentDidUpdate = (prevProps, prevState) => {
-    if (window.sessionStorage.getItem('highScore') < this.state.score) {
-      window.sessionStorage.setItem('highScore', this.state.score)
-    } else {
-      return
-    }
+    if (window.sessionStorage.getItem('highScore') < this.state.score) window.sessionStorage.setItem('highScore', this.state.score)
+
   }
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
