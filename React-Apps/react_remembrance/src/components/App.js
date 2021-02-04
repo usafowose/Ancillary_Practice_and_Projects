@@ -26,8 +26,8 @@ class App extends React.Component {
 
   componentDidUpdate = (prevProps, prevState) => {
     if (window.sessionStorage.getItem('highScore') < this.state.score) window.sessionStorage.setItem('highScore', this.state.score)
-
   }
+
   handleScoreIncrement = (clickedVal) => {
     const { clickedValues } = this.state;
     const highScore = this.state.highScore;
@@ -52,9 +52,7 @@ class App extends React.Component {
   render() {
     this.shuffle(this.images)
 
-
     return (
-
       <div>
         <Header
           score={this.state.score}
@@ -76,11 +74,10 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-
       </div>
     )
-
   }
+
 };
 
 

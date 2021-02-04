@@ -17,18 +17,13 @@ class Image extends React.Component {
 
   handleClickEvent = (e) => {
     const { increaseScore, content } = this.props
-
     let sourceUrl = e.target.src;
 
     if (sourceUrl.includes(content)) {
       increaseScore(content);
       this.setState({ clickedAlready: true })
-    } else {
-      return
     }
-
   }
-
 
   render() {
     const { content } = this.props
