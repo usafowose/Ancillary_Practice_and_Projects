@@ -6,20 +6,29 @@ namespace C_
   {
     static void Main(string[] args)
     {
+      // PLAYING AROUND WITH STRINGS AND THEIR METHODS
       string name = "Queen";
+      string statement = $"Queen is a professional that likes dogs";
 
-      Console.WriteLine($"Hello, my name is {name}");
+      bool validate = statement.Contains(name);
+      bool checkStart = statement.StartsWith("Quee");
+      bool checkEnd = statement.EndsWith("dogs");
 
-      System.String greeting = "Hello, World";
-      // System.String newGreeting = greeting.Replace("World", name); 
+      int index = statement.IndexOf("professional");
+      string newStatement = statement.Replace("professional", "baddie").Replace("dogs", "cats");
+      string newStatementEmphasized = newStatement.Replace(name, name.ToUpper());
 
-      Console.WriteLine(greeting.Contains(", ")); //Should Return True
-      Console.WriteLine(greeting.Replace("World", name)); //
-      Console.WriteLine(greeting.IndexOf("Worl"));
+
+      Console.WriteLine($"{checkStart} {checkEnd}");
+      Console.WriteLine($"Is the Word {name} in the Statement? {validate} \nThe Word \"Professional\" is found at Index {index} ");
+      Console.WriteLine("-----------------------");
+      Console.WriteLine($"Old Statement: {statement}");
+      Console.WriteLine($"New Statement: {newStatement}");
+      Console.WriteLine($"Emphasized Statement: {newStatementEmphasized}");
+
 
       var Queen = (firstName: "Queen", lastName: "Davison", age: 22, favFood: "Papa Johns");
-
-      Console.WriteLine($"{Queen.firstName} -- {Queen.lastName} \n Age: {Queen.age} \n\t FavFood: {Queen.favFood}");
+      Console.WriteLine($"First Name: {Queen.firstName} \nSurname: {Queen.lastName}\nAge: {Queen.age} \nFavFood: {Queen.favFood}");
     }
 
     static void NotMain1(string[] args)
