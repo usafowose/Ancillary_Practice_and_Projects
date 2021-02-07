@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\C#.csproj": {}
+    "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\C#.csproj": {
+    "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\C#.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj",
         "projectName": "C#",
-        "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\C#.csproj",
+        "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj",
         "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\obj\\",
+        "outputPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
