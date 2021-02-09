@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld2\\HelloWorld2\\Working With Numbers.csproj",
-      "projectName": "Working With Numbers",
-      "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld2\\HelloWorld2\\Working With Numbers.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld2\\HelloWorld2\\WorkingWithNumbers.csproj",
+      "projectName": "WorkingWithNumbers",
+      "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld2\\HelloWorld2\\WorkingWithNumbers.csproj",
       "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld2\\HelloWorld2\\obj\\",
       "projectStyle": "PackageReference",

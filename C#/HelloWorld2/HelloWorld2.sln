@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld2", "HelloWorld2\HelloWorld2.csproj", "{5D180E0D-DA87-423C-97A7-ED274D386CD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNumbers", "HelloWorld2\WorkingWithNumbers.csproj", "{5D180E0D-DA87-423C-97A7-ED274D386CD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello_World_And_Strings", "..\HelloWorld\Hello_World_And_Strings.csproj", "{3AF93398-A736-44BE-9D6B-E403000DE7D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5D180E0D-DA87-423C-97A7-ED274D386CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D180E0D-DA87-423C-97A7-ED274D386CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D180E0D-DA87-423C-97A7-ED274D386CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

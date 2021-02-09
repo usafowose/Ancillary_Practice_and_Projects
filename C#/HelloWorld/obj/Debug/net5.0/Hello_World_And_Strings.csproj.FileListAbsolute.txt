@@ -1,0 +1,16 @@
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.exe
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.deps.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.runtimeconfig.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.runtimeconfig.dev.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\ref\Hello_World_And_Strings.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\bin\Debug\net5.0\Hello_World_And_Strings.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.csprojAssemblyReference.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.AssemblyInfoInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.AssemblyInfo.cs
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\ref\Hello_World_And_Strings.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld\obj\Debug\net5.0\Hello_World_And_Strings.genruntimeconfig.cache

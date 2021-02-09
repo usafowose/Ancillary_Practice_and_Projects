@@ -4,8 +4,32 @@ namespace C_
 {
   class Program
   {
-    static void Main(string[] args)
+    
+
+    static void NotMain1(string[] args)
     {
+            Console.WriteLine($"These are the arguments: {args[0]} {args[1]} \n \n "); 
+      string name = "Queen";
+
+      string[] people = { "Queen", "Andrew", "Mom" };
+      int[] nums = { 4, 5, 6 };
+
+      Console.WriteLine($"{name}");
+      Console.WriteLine($"My Girfriends Name Is {name} and her name is {name.Length} letters long");
+      Console.WriteLine($"{nums}");
+      Console.WriteLine("Hello World!");
+      Console.WriteLine(people[1]);
+      Console.WriteLine($"{people[0]}");
+    }
+
+    static void StringFormatting()
+        {
+            string[] args = { "Andrew", "Queen" }; 
+            NotMain1(args: args); 
+        }
+        static void Main(string[] args)
+    {
+            StringFormatting(); 
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
       string name = "Queen";
       string statement = $"Queen is a professional that likes dogs";
@@ -29,21 +53,6 @@ namespace C_
 
       var Queen = (firstName: "Queen", lastName: "Davison", age: 22, favFood: "Papa Johns");
       Console.WriteLine($"First Name: {Queen.firstName} \nSurname: {Queen.lastName}\nAge: {Queen.age} \nFavFood: {Queen.favFood}");
-    }
-
-    static void NotMain1(string[] args)
-    {
-      string name = "Queen";
-
-      string[] people = { "Queen", "Andrew", "Mom" };
-      int[] nums = { 4, 5, 6 };
-
-      Console.WriteLine($"{name}");
-      Console.WriteLine($"My Girfriends Name Is {name} and her name is {name.Length} letters long");
-      Console.WriteLine($"{nums}");
-      Console.WriteLine("Hello World!");
-      Console.WriteLine(people[1]);
-      Console.WriteLine($"{people[0]}");
     }
   }
 }
