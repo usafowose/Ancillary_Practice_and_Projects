@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj",
-      "projectName": "C#",
-      "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\C#.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\Hello World And Strings.csproj",
+      "projectName": "Hello World And Strings",
+      "projectPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\Hello World And Strings.csproj",
       "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Owner\\Class\\Ancillary_Projects_Practice\\C#\\HelloWorld\\obj\\",
       "projectStyle": "PackageReference",

@@ -74,11 +74,9 @@ namespace HelloWorld2
             // ------------------------------------------
             //Now that you've seen the different numeric types, write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI. One hint: .NET contains a constant for PI, Math.PI that you can use for that value. Math.PI, like all constants declared in the System.Math namespace, is a double value. For that reason, you should use double instead of decimal values for this challenge.
 
-            double radius = 2.5;
-            double area = Math.Pow(radius, 2) * Math.PI;
-
+            System.Double radius = 2.5;
+            System.Double area = Math.Pow(radius, 2) * Math.PI;
             Console.WriteLine($"The area of a circle with a radius of {radius} is {area}"); 
-
 
         }
 
