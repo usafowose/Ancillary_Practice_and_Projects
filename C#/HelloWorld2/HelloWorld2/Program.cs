@@ -46,11 +46,30 @@ namespace HelloWorld2
             double maxDouble = double.MaxValue;
             double minDouble = double.MinValue;
             double maxDoubleOverflow = maxDouble * 100; 
-            Console.WriteLine($"Max Double Number : {maxDouble} \nMin Double Number: {minDouble}\n Overflow: {maxDoubleOverflow}"); // Goes all the way to + and - 1.7976931348623157E+308 
+            Console.WriteLine($"Max Double Number : {maxDouble} \nMin Double Number: {minDouble}\n Overflow: {maxDoubleOverflow} \n"); // Goes all the way to + and - 1.7976931348623157E+308 
 
 
             double oneThird = 1.0 / 3.0;
-            Console.WriteLine(oneThird); 
+            Console.WriteLine(oneThird);
+            Console.Write("\n");
+
+            //Working with Decimal Types
+            // Decimal Range
+            decimal minDecimal = decimal.MinValue;
+            decimal maxDecimal = decimal.MaxValue;
+
+            Console.WriteLine($"Min Decimal Value is: {minDecimal} and the Max Decimal Vakue is {maxDecimal}");
+
+            //Decimal Types Offer More Precision Than Double Types 
+            double one = 1.0;
+            double two = 3.0;
+            Console.WriteLine(one / two); // returns 0.3333333333333333
+
+            decimal ONE = 1.0M;
+            decimal TWO = 3.0M;
+            Console.WriteLine(ONE / TWO); // returns 0.3333333333333333333333333333
+
+
         }
         
         public void NewFunc()
