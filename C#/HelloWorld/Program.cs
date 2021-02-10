@@ -22,14 +22,57 @@ namespace C_
       Console.WriteLine($"{people[0]}");
     }
 
-    static void StringFormatting()
+    static void CallAllMembers()
         {
             string[] args = { "Andrew", "Queen" }; 
-            NotMain1(args: args); 
+            NotMain1(args: args);
+            StringFormatting();
+        }
+    
+
+    static void StringFormatting()
+        {
+            //Character Escape Sequences
+            //__________________________
+            //|____________|___________|
+            //|______\n____|   newLine |
+            //|______\t____|    tab    |    
+            //|______\u____|  unicode  |
+            //|____________|___________|
+
+            Console.WriteLine("New Line After This \n\n  \t Why I Am So Far Away?\t Whatever! \n\tDoes Anyone Speak Japanese? \u3053\u3093 ");
+            //---------------------------------------------------------------------------------------
+            //Verbatim String Literal
+            //Initiated with @ before open quotes
+            Console.WriteLine(@"           The space is intentional
+                                 As is this belly string :) Everything is escaped (literally)
+                                            /\/\/\/\/\/\/\/\/\/\/\ EVERYTHING");
+
+            string dirName = "HW11-Bamazon";
+            string path = $@"C:\Users\Owner\Class\Homework-Assignments\{dirName}\README.md";
+            Console.WriteLine(path);
+
+            //----------------------------------GENERAL PRACTICE--------------------------------------
+            string projectName = "ACME";
+            string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+
+            /*
+             * Expected Output: 
+             * ---------------------
+             * View English output:
+             *     c:\Exercise\ACME\data.txt
+             * Посмотреть русский вывод:
+             *     c:\Exercise\ACME\ru-RU\data.txt
+            */
+            Console.WriteLine($"View English Output\n\tc:\\Exercise\\{projectName}\\data.txt");
+            Console.WriteLine($"{russianMessage}\n\tc:\\Exercise\\{projectName}\\ru-RU\\data.txt");
+
+            //----------------------------------------------------------------------------------------
+            //----------------------------------------------------------------------------------------
         }
         static void Main(string[] args)
     {
-            StringFormatting(); 
+            CallAllMembers(); 
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
       string name = "Queen";
       string statement = $"Queen is a professional that likes dogs";
@@ -55,4 +98,5 @@ namespace C_
       Console.WriteLine($"First Name: {Queen.firstName} \nSurname: {Queen.lastName}\nAge: {Queen.age} \nFavFood: {Queen.favFood}");
     }
   }
+
 }
