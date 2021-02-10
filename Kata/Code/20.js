@@ -18,7 +18,7 @@ const likes = (names) => {
       returnStatmnt = `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
       break;
   }
-  return returnStatmnt;
+  return returnStatmnt
 }
 
 let names = ['Andrew', 'Queen', 'Dahjah', 'Jas', 'Andrew', 'Queen', 'Dahjah', 'Jas', 'Jimmy']
