@@ -7,6 +7,8 @@ namespace GetSum
 
         public static int GetSum(int num1, int num2)
         {
+            Random dice = new Random();
+            
             int sum = 0;
             int least = Math.Min(num1, num2), greatest = Math.Max(num1, num2);
             do
