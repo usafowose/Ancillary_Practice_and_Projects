@@ -9,13 +9,14 @@ namespace DescendingOrder
 
         // Examples:
         // Input: 42145 Output: 54421
-        public int Descending(int args)
+        public static int Descending(int number)
         {
-
+                
             return 5; 
         }
         static void Main(string[] args)
         {
+            Console.WriteLine(Descending(45125)); 
             Console.WriteLine("Hello World!");
         }
     }
