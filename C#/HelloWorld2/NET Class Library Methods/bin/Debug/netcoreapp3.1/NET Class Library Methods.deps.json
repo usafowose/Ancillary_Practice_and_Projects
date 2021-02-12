@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "NET Class Library Methods/1.0.0": {
+        "runtime": {
+          "NET Class Library Methods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NET Class Library Methods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

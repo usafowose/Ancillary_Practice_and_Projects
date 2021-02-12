@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNumbers", "Hello
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello_World_And_Strings", "..\HelloWorld\Hello_World_And_Strings.csproj", "{3AF93398-A736-44BE-9D6B-E403000DE7D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET Class Library Methods", "NET Class Library Methods\NET Class Library Methods.csproj", "{05796070-A3CB-4622-8AF4-9B9744E4F1D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AF93398-A736-44BE-9D6B-E403000DE7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05796070-A3CB-4622-8AF4-9B9744E4F1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05796070-A3CB-4622-8AF4-9B9744E4F1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05796070-A3CB-4622-8AF4-9B9744E4F1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05796070-A3CB-4622-8AF4-9B9744E4F1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

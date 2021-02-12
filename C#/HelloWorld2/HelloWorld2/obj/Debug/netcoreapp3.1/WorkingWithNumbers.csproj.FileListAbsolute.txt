@@ -1,0 +1,13 @@
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.exe
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.deps.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.runtimeconfig.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.runtimeconfig.dev.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\bin\Debug\netcoreapp3.1\WorkingWithNumbers.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.csprojAssemblyReference.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.AssemblyInfoInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.AssemblyInfo.cs
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\HelloWorld2\obj\Debug\netcoreapp3.1\WorkingWithNumbers.genruntimeconfig.cache

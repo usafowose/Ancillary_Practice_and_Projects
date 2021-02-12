@@ -53,6 +53,9 @@ namespace HelloWorld2
             Console.WriteLine(oneThird);
             Console.Write("\n");
 
+            double oneEighth = 1.0 / 16.0;
+            Console.WriteLine(oneEighth); 
+
             //Working with Decimal Types
             // Decimal Range
             decimal minDecimal = decimal.MinValue;

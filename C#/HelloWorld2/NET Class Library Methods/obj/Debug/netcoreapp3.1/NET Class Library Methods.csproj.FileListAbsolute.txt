@@ -1,0 +1,13 @@
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.exe
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.deps.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.runtimeconfig.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.runtimeconfig.dev.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\bin\Debug\netcoreapp3.1\NET Class Library Methods.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.csprojAssemblyReference.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.AssemblyInfoInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.AssemblyInfo.cs
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\HelloWorld2\NET Class Library Methods\obj\Debug\netcoreapp3.1\NET Class Library Methods.genruntimeconfig.cache
