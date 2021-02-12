@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata_Coding_Challenges", "Kata_Coding_Challenges\Kata_Coding_Challenges.csproj", "{D0584CEC-4E45-484F-89D8-B035A84805F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreFizz", "Kata_Coding_Challenges\PreFizz.csproj", "{D0584CEC-4E45-484F-89D8-B035A84805F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DescendingOrder", "DescendingOrder\DescendingOrder.csproj", "{D751C37E-735F-4F08-B5CB-5265BE3960CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D0584CEC-4E45-484F-89D8-B035A84805F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0584CEC-4E45-484F-89D8-B035A84805F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0584CEC-4E45-484F-89D8-B035A84805F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D751C37E-735F-4F08-B5CB-5265BE3960CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D751C37E-735F-4F08-B5CB-5265BE3960CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D751C37E-735F-4F08-B5CB-5265BE3960CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D751C37E-735F-4F08-B5CB-5265BE3960CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
