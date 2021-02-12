@@ -11,10 +11,15 @@ namespace If_Statement
             int roll1 = dice.Next(1, 7);
             int roll2 = dice.Next(1, 7); 
             int roll3 = dice.Next(1,7);
+            roll1 = 6;
+            roll2 = 6;
+            roll3 = 6;
             int[] rolls = { roll1, roll2, roll3 };
-            int score = 0; 
+            int score = 0;
 
-            foreach(int roll in rolls)
+            
+
+            foreach (int roll in rolls)
             {
                 Console.WriteLine(roll); 
                 score += roll; 
@@ -22,16 +27,19 @@ namespace If_Statement
 
             if ((roll1 == roll2) || (roll2 == roll3) || (roll3 == roll1))
             {
-                Console.WriteLine(@"You Scored A Double! +2 Pts!");
-                 
-                score += 2; 
+                if((roll1==roll2) && (roll2==roll3))
+                {
+                    Console.WriteLine("You Scored A Triple: +6 Points!");
+                    score += 6; 
+                } 
+                else
+                {
+                    Console.WriteLine(@"You Scored A Double! +2 Pts!");
+                    score += 2; 
+                }
             }
 
-            if((roll1==roll2) && (roll2==roll3))
-            {
-                Console.WriteLine("You Scored A Triple: +6 Points!");
-                score += 6; 
-            }
+            
             Console.WriteLine(score);
             return score;
         }
