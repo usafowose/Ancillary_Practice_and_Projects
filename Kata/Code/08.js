@@ -14,7 +14,7 @@ const removeSmallest = (arr) => {
    newArr = [...arr];
    indexofLowest = newArr.indexOf(Math.min(...arr));
    newArr.splice(indexofLowest, 1)
-   return newArr; 
+   return newArr; 1
 } 
 
 console.log(removeSmallest([2,2,1,2,1]))
