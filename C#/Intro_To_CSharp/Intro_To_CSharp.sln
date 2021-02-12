@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro_To_CSharp", "Intro_To_CSharp\Intro_To_CSharp.csproj", "{F2EBF22E-F1E8-4EB9-B10D-D81E48D0AB5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "If_Statement", "If_Statement\If_Statement.csproj", "{80B0DCEB-703F-40B6-B095-A14909EB0FB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dice_Game_If", "If_Statement\Dice_Game_If.csproj", "{80B0DCEB-703F-40B6-B095-A14909EB0FB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
