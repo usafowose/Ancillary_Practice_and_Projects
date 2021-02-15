@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Ends_With", "String_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreFizz", "PreFizz\PreFizz.csproj", "{B3289F42-BAC8-4BDB-BF4E-60D879184286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSum", "GetSum\GetSum.csproj", "{361701FB-F2C6-46FE-BBA8-30F139E57E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetSum", "GetSum\GetSum.csproj", "{361701FB-F2C6-46FE-BBA8-30F139E57E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isIsogram", "isIsogram\isIsogram.csproj", "{6D8138DF-4F38-4E3C-B072-74FB986DF418}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{361701FB-F2C6-46FE-BBA8-30F139E57E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{361701FB-F2C6-46FE-BBA8-30F139E57E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{361701FB-F2C6-46FE-BBA8-30F139E57E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
