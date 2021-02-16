@@ -11,13 +11,8 @@ namespace If_Statement
             int roll1 = dice.Next(1, 7);
             int roll2 = dice.Next(1, 7); 
             int roll3 = dice.Next(1,7);
-            roll1 = 6;
-            roll2 = 6;
-            roll3 = 6;
             int[] rolls = { roll1, roll2, roll3 };
             int score = 0;
-
-            
 
             foreach (int roll in rolls)
             {
