@@ -23,16 +23,29 @@ namespace Counter
             int count = start;
             while (count >= 0)
             {
-                Console.WriteLine($"Countdown from {count} ");
+                Console.WriteLine($"Countdown from {count}");
                 count--; 
             }
             return;
         }
 
 
+        static void ABC(char start)
+        {
+            char firstLetter = start;
+            char endOfAlphabet = 'z';
+
+            for (char i = firstLetter; i <= endOfAlphabet; i++)
+            {
+                Console.WriteLine($"Current Letter: {firstLetter}");
+                firstLetter++;
+            }
+        }
+
         static void Main(string[] args)
         {
-            Countdown(Counter(20)); 
+            Countdown(Counter(20));
+            ABC('i'); 
         }
     }
 }
