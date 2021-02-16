@@ -56,11 +56,28 @@ namespace Counter
             }
         }
 
+        static void DivisibleByThree(int end)
+        {
+            int start = end; 
+
+            while ( start>=1)
+            {
+                if(start%3==0)
+                {
+                    Console.WriteLine(start);
+                }
+                start--;  
+            } 
+
+            start--; 
+        }
+
         static void Main(string[] args)
         {
             Countdown(Counter(20));
             ABC('i');
             CellBlock(1, 'a');
+            DivisibleByThree(25); 
         }
     }
 }
