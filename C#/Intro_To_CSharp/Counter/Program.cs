@@ -42,10 +42,25 @@ namespace Counter
             }
         }
 
+        static void CellBlock(int row, char column)
+        {
+            int startRow = row;
+            char startChar = column;
+
+            for (int i = startRow; i < 27; i++)
+            {
+                for (char j = startChar; j <= 'z'; j++)
+                {
+                    Console.WriteLine($"The Cell is Now ({i}, {j})"); 
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             Countdown(Counter(20));
-            ABC('i'); 
+            ABC('i');
+            CellBlock(1, 'a');
         }
     }
 }
