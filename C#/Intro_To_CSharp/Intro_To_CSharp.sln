@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dice_Game_If", "If_Statemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counter", "Counter\Counter.csproj", "{C5F20924-886A-4A26-B32D-C5037B64895B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithArrays", "WorkingWithArrays\WorkingWithArrays.csproj", "{4FCA98C1-6414-4064-8153-B61C714FF8FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C5F20924-886A-4A26-B32D-C5037B64895B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F20924-886A-4A26-B32D-C5037B64895B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F20924-886A-4A26-B32D-C5037B64895B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCA98C1-6414-4064-8153-B61C714FF8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCA98C1-6414-4064-8153-B61C714FF8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCA98C1-6414-4064-8153-B61C714FF8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCA98C1-6414-4064-8153-B61C714FF8FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
