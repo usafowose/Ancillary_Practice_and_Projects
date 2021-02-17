@@ -47,37 +47,39 @@ namespace Counter
             int startRow = row;
             char startChar = column;
 
-            for (int i = startRow; i < 27; i++)
+            for (int i = startRow; i < 10; i++)
             {
                 for (char j = startChar; j <= 'z'; j++)
                 {
-                    Console.WriteLine($"The Cell is Now ({i}, {j})"); 
+                    Console.WriteLine($"The Cell is Now ({i}, {j})\n"); 
                 }
             }
         }
 
         static void DivisibleByThree(int end)
         {
-            int start = end; 
+            int start = end;
+            int sum = 0; 
 
             while ( start>=1)
             {
                 if(start%3==0)
                 {
                     Console.WriteLine(start);
+                    sum += start; 
                 }
                 start--;  
-            } 
+            }
 
-            start--; 
+            Console.WriteLine(sum); 
         }
 
         static void Main(string[] args)
         {
             Countdown(Counter(20));
             ABC('i');
-            CellBlock(1, 'a');
-            DivisibleByThree(25); 
+            CellBlock(1, 'q');
+            DivisibleByThree(20); 
         }
     }
 }
