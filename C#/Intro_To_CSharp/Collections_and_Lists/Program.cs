@@ -5,8 +5,30 @@ namespace Collections_and_Lists
 {
     class Program
     {
+
+        static void Fibonacci()
+        {
+            List<int> fibonacci = new List<int>();
+            fibonacci.Add(1);
+            fibonacci.Add(1); 
+
+            for (int i = 2; i < 30; i++)
+            {
+                int previous = fibonacci[i - 1];
+                int previous2 = fibonacci[i - 2];
+
+                fibonacci.Add((previous + previous2)); 
+            }
+
+            foreach (int num in fibonacci) 
+            {
+                Console.WriteLine(num); 
+            }
+
+        }
         static void Main(string[] args)
         {
+            Fibonacci(); 
             var names = new List<string> { "Andrew", "Queen", "Ashley" };
    
             //foreach(string name in names)
@@ -26,13 +48,13 @@ namespace Collections_and_Lists
                 Console.WriteLine($"Name {i+1}: {names[i]}\n");
             }
 
-            List<int> numbers = new List<int> { 1, 5, 34, 22, 3, 96, 6, 040, 456 };
-            numbers.Sort();
+            //List<int> numbers = new List<int> { 1, 5, 34, 22, 3, 96, 6, 040, 456 };
+            //numbers.Sort();
 
-            foreach (int num in numbers)
-            {
-                Console.WriteLine($"{num} ");
-            }
+            //foreach (int num in numbers)
+            //{
+            //    Console.WriteLine($"{num} ");
+            //}
             
 
         }
