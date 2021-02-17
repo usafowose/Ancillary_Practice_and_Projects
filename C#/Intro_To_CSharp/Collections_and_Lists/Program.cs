@@ -9,25 +9,31 @@ namespace Collections_and_Lists
         {
             var names = new List<string> { "Andrew", "Queen", "Ashley" };
    
-            //foreach(var name in names)
+            //foreach(string name in names)
             //{
             //    Console.WriteLine($"Hello, {name.ToUpper()}!"); 
             //}
 
-            names.Add("Maria");
-            names.Add("John");
-            names.Remove("Ashley");
+            List<string> pickOne = new List<string> { "Lebron", "Steph", "KD", "Draymond", "Dame Dolla", "CJ McCollum", "Harden", "Clyde The Glyde", "Brandon Ingram", "Spyda D Mitchell" };
+            var person = new Random();
+            for (int i = 0; i<500; i++)
+            {
+                names.Add(pickOne[person.Next(0,10)]);
+            }
 
-            names.ForEach(Console.WriteLine);
-
-            int length = names.Count;
-
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < names.Count; i++)
             {
                 Console.WriteLine($"Name {i+1}: {names[i]}\n");
             }
 
+            List<int> numbers = new List<int> { 1, 5, 34, 22, 3, 96, 6, 040, 456 };
+            numbers.Sort();
 
+            foreach (int num in numbers)
+            {
+                Console.WriteLine($"{num} ");
+            }
+            
 
         }
     }
