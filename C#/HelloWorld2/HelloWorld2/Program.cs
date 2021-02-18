@@ -73,6 +73,16 @@ namespace HelloWorld2
             Console.WriteLine(ONE / TWO); // returns 0.3333333333333333333333333333
 
 
+            int five = 5;
+            int four = 4;
+
+            double fiveOverFour = five / four; //returns 1, because compiler divides ints and wont convert to double as data is lost. casting is needed (explicit conversion of either int)
+            double fiveFourths = (double)five / four; //returns 1.25 as explicit conversion turns int to double and operation can be done without losing data. 
+
+            Console.WriteLine(fiveFourths); 
+
+
+
             //Challenge 
             // ------------------------------------------
             //Now that you've seen the different numeric types, write code that calculates the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle is the radius squared multiplied by PI. One hint: .NET contains a constant for PI, Math.PI that you can use for that value. Math.PI, like all constants declared in the System.Math namespace, is a double value. For that reason, you should use double instead of decimal values for this challenge.
