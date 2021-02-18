@@ -24,11 +24,11 @@ namespace Collections_and_Lists
 
         static void EnumerateFibonacci(List<int> fibSequence)
         {
-            //foreach(int num in fibSequence)
-            //{
-            //    Console.WriteLine(num); 
-            //}
-            Console.WriteLine(fibSequence[19]);
+            foreach (int num in fibSequence)
+            {
+                Console.WriteLine(num);
+            }
+            //Console.WriteLine(fibSequence[19]);
         }
         static void Main(string[] args)
         {
