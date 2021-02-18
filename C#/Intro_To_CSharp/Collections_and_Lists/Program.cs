@@ -6,6 +6,11 @@ namespace Collections_and_Lists
     class Program
     {
 
+        /// <summary>
+        /// Implements a Fibonacci Sequence 
+        /// </summary>
+        /// <returns>A list of type 'int' that contains the first 20 numbers in the Fibonacci sequence/returns>
+        
         static List<int> Fibonacci()
         {
             List<int> fibonacci = new List<int>();
@@ -22,6 +27,10 @@ namespace Collections_and_Lists
             return fibonacci;
         }
 
+        /// <summary>
+        /// Takes a List of type int and enumerates each value, printing it to the console.
+        /// </summary>
+        /// <param name="fibSequence"></param>
         static void EnumerateFibonacci(List<int> fibSequence)
         {
             foreach (int num in fibSequence)
