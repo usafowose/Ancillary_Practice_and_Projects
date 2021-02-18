@@ -37,7 +37,6 @@ namespace Collections_and_Lists
             {
                 Console.WriteLine(num);
             }
-            //Console.WriteLine(fibSequence[19]);
         }
         static void Main(string[] args)
         {
@@ -55,6 +54,13 @@ namespace Collections_and_Lists
             {
                 names.Add(pickOne[person.Next(0,10)]);
             }
+
+            string name = "167";
+            int intName = Convert.ToInt32(name);
+
+            Console.WriteLine(intName + 7);
+
+            
 
             for (int i = 0; i < names.Count; i++)
             {
