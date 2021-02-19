@@ -6,7 +6,6 @@ namespace C_
   class Program
   {
     
-
     static void NotMain1(string[] args)
     {
             Console.WriteLine($"These are the arguments: {args[0]} {args[1]} \n \n "); 
@@ -113,7 +112,6 @@ namespace C_
         }
     static void Main(string[] args)
     {
-            
             CallAllMembers(); 
 
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
@@ -135,6 +133,8 @@ namespace C_
       Console.WriteLine($"Old Statement: {statement}");
       Console.WriteLine($"New Statement: {newStatement}");
       Console.WriteLine($"Emphasized Statement: {newStatementEmphasized}");
+
+      Console.WriteLine(("I am Hungry").Split(' ')[0]);
 
 
       var Queen = (firstName: "Queen", lastName: "Davison", age: 22, favFood: "Papa Johns");
