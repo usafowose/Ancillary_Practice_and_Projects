@@ -76,10 +76,26 @@ namespace HelloWorld2
             int five = 5;
             int four = 4;
 
+
+
             double fiveOverFour = five / four; //returns 1, because compiler divides ints and wont convert to double as data is lost. casting is needed (explicit conversion of either int)
             double fiveFourths = (double)five / four; //returns 1.25 as explicit conversion turns int to double and operation can be done without losing data. 
 
-            Console.WriteLine(fiveFourths); 
+
+            Console.WriteLine(fiveFourths);
+
+            /*
+             * Converting double to int 
+             * This type of conversion comes with data loss 
+             * Requires a cast (explicit conversion) to tell compiler that data loss is welcomed
+             * It will only return the whole number of the double. 
+             * TO NOTE: It does not round. You should use Math.Round to round the double first. 
+            */
+
+            double myNumber = 5.673;
+            int myNumber2 = (int)Math.Round(myNumber); // returns 5 //if rounded, returns 6
+            Console.WriteLine(myNumber2); 
+
 
 
 
