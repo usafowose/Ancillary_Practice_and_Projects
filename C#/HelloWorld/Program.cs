@@ -31,7 +31,7 @@ namespace C_
             Console.WriteLine("=======================================");
             CheckForNull("        j ");
             Console.WriteLine("=======================================");
-            FindAll("pneumonoultramicroscopicsilicovolcanoconiosis", 'm').ForEach(Console.WriteLine); 
+            FindAll("pneumonoultramicroscopicsilicovolcanoconiosis", 'n').ForEach(Console.WriteLine); 
         }
     
 
@@ -98,11 +98,15 @@ namespace C_
             {
                 int whereItIs = inputString.IndexOf(searchChar, i+1);
                 i = whereItIs == -1 ? inputString.Length : whereItIs;
-                if (whereItIs == -1) break; 
-                allOccurences.Add(whereItIs);
+                if (whereItIs == -1 && allOccurences.Count == 0)
+                {
+                    allOccurences.Add(whereItIs);
+                    break; 
+                }
+                allOccurences.Add(whereItIs); 
             }
 
-            return allOccurences; 
+            return allOccurences;
         }
     static void Main(string[] args)
     {
