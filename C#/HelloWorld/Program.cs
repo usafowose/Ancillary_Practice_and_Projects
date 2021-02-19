@@ -31,7 +31,7 @@ namespace C_
             Console.WriteLine("=======================================");
             CheckForNull("        j ");
             Console.WriteLine("=======================================");
-            FindAll("pneumonoultramicroscopicsilicovolcanoconiosis", 'n').ForEach(Console.WriteLine); 
+            FindAll("pneumonoultramicroscopicsilicovolcanoconiosis", 'x').ForEach(Console.WriteLine); 
         }
     
 
@@ -113,6 +113,7 @@ namespace C_
         }
     static void Main(string[] args)
     {
+            
             CallAllMembers(); 
 
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
