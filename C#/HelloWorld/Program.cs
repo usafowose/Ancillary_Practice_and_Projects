@@ -102,6 +102,9 @@ namespace C_
                 {
                     allOccurences.Add(whereItIs);
                     break; 
+                } else if (whereItIs == -1)
+                {
+                    break; 
                 }
                 allOccurences.Add(whereItIs); 
             }
