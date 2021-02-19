@@ -55,9 +55,9 @@ namespace Collections_and_Lists
                 names.Add(pickOne[person.Next(0,10)]);
             }
 
+
             string name = "167";
             int intName = Convert.ToInt32(name);
-
             Console.WriteLine(intName + 7);
 
             
