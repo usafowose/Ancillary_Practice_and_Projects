@@ -71,7 +71,14 @@ namespace C_
             */
             Console.WriteLine($"View English Output\n\tc:\\Exercise\\{projectName}\\data.txt");
             Console.WriteLine($"{russianMessage}\n\tc:\\Exercise\\{projectName}\\ru-RU\\data.txt");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            const string formatString = "My name is {0} and I am {1} years old and I have {2} siblings as of right now: {3}";
+            const string name = "Andrew";
+            const string siblings = "4";
+            string rightNow = DateTime.Now.ToShortTimeString();
 
+            string formattedString = String.Format(formatString, name, siblings, rightNow);
+            Console.WriteLine(formattedString); 
             //----------------------------------------------------------------------------------------
             //----------------------------------------------------------------------------------------
         }
@@ -134,7 +141,10 @@ namespace C_
       Console.WriteLine($"New Statement: {newStatement}");
       Console.WriteLine($"Emphasized Statement: {newStatementEmphasized}");
 
-      Console.WriteLine(("I am Hungry").Split(' ')[0]);
+      Console.WriteLine(("I am Hungry").Split(' '));
+            int myNum = 7453;
+            string numToString = myNum.ToString();
+            Console.WriteLine(numToString + 'k');
 
 
       var Queen = (firstName: "Queen", lastName: "Davison", age: 22, favFood: "Papa Johns");
