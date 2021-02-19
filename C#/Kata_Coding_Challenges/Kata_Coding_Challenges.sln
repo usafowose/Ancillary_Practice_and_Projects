@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PreFizz", "PreFizz\PreFizz.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetSum", "GetSum\GetSum.csproj", "{361701FB-F2C6-46FE-BBA8-30F139E57E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isIsogram", "isIsogram\isIsogram.csproj", "{6D8138DF-4F38-4E3C-B072-74FB986DF418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "isIsogram", "isIsogram\isIsogram.csproj", "{6D8138DF-4F38-4E3C-B072-74FB986DF418}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "breakCamel", "breakCamelCase\breakCamel.csproj", "{F13CF398-3D03-4BFA-9032-D6C2AC387CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D8138DF-4F38-4E3C-B072-74FB986DF418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13CF398-3D03-4BFA-9032-D6C2AC387CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13CF398-3D03-4BFA-9032-D6C2AC387CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13CF398-3D03-4BFA-9032-D6C2AC387CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13CF398-3D03-4BFA-9032-D6C2AC387CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
