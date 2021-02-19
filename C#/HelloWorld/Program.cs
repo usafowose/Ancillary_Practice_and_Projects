@@ -27,6 +27,9 @@ namespace C_
             string[] args = { "Andrew", "Queen" }; 
             NotMain1(args: args);
             StringFormatting();
+            Console.WriteLine("=======================================");
+            Console.WriteLine(CheckForNull("         "));
+            Console.WriteLine("=======================================");
         }
     
 
@@ -71,7 +74,12 @@ namespace C_
             //----------------------------------------------------------------------------------------
             //----------------------------------------------------------------------------------------
         }
-        static void Main(string[] args)
+
+    static bool CheckForNull(string input)
+        {
+            return String.IsNullOrWhiteSpace(input) ? true : false; 
+        }
+    static void Main(string[] args)
     {
             CallAllMembers(); 
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
