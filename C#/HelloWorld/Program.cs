@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace C_
 {
@@ -25,11 +26,12 @@ namespace C_
     static void CallAllMembers()
         {
             string[] args = { "Andrew", "Queen" }; 
-            NotMain1(args: args);
+            NotMain1(args);
             StringFormatting();
             Console.WriteLine("=======================================");
-            Console.WriteLine(CheckForNull("         "));
+            CheckForNull("        j ");
             Console.WriteLine("=======================================");
+            FindAll("pneumonoultramicroscopicsilicovolcanoconiosis", 'm').ForEach(Console.WriteLine); 
         }
     
 
@@ -75,13 +77,37 @@ namespace C_
             //----------------------------------------------------------------------------------------
         }
 
-    static bool CheckForNull(string input)
+    static void CheckForNull(string input)
         {
-            return String.IsNullOrWhiteSpace(input) ? true : false; 
+            Console.WriteLine(String.IsNullOrWhiteSpace(input) ? "The string is not valid" : "This is a valid string");
+            
+        }
+
+        /// <summary>
+        /// Returns a list of all occurences that a search char occurs in a given string 
+        /// </summary>
+        /// <param name="inputString">The string against which the search is being made</param>
+        /// <param name="searchChar">The char for whose occurences we are searching against the input string</param>
+        /// <returns>List<int></returns>
+    static List<int> FindAll(string inputString, char searchChar)
+        {
+            List<int> allOccurences = new List<int>();
+
+            int i = 0;
+            while (i<inputString.Length)
+            {
+                int whereItIs = inputString.IndexOf(searchChar, i+1);
+                i = whereItIs == -1 ? inputString.Length : whereItIs;
+                if (whereItIs == -1) break; 
+                allOccurences.Add(whereItIs);
+            }
+
+            return allOccurences; 
         }
     static void Main(string[] args)
     {
             CallAllMembers(); 
+
       // PLAYING AROUND WITH STRINGS AND THEIR METHODS
       string name = "Queen";
       string statement = $"Queen is a professional that likes dogs";
