@@ -94,9 +94,7 @@ namespace HelloWorld2
 
             double myNumber = 5.673;
             int myNumber2 = (int)Math.Round(myNumber); // returns 5 //if rounded, returns 6
-            Console.WriteLine(myNumber2); 
-
-
+            Console.WriteLine(myNumber2.ToString());
 
 
             //Challenge 
