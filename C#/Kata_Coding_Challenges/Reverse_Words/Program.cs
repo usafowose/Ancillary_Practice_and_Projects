@@ -17,27 +17,35 @@ namespace Reverse_Words
             List<char> Reversed = new List<char>();
             List<char> thisWordReversed = new List<char>();
             int start = 0; 
+
             while (start <= word_input.Length - 1)
             {
-                char thisChar = word_input[start]; 
-                 
-                if(thisChar== ' ')
+                char thisChar = word_input[start];
+
+                if (thisChar == ' ')
+                {   
+                    thisWordReversed.Reverse();
+                    thisWordReversed.Add(thisChar);
+                    Reversed.AddRange(thisWordReversed);
+                    thisWordReversed.Clear();
+                }
+                else
                 {
                     thisWordReversed.Add(thisChar);
-                    thisWordReversed.Reverse();
-                    Reversed.AddRange(thisWordReversed); 
                 }
-                thisWordReversed.Add(thisChar);
-                start++; 
 
-                
-        
+                start++; 
             }
+
+            thisWordReversed.Reverse();
+            Reversed.AddRange(thisWordReversed);
+            thisWordReversed.Clear();
+
             return new string(Reversed.ToArray());  
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(Reverse_Words("sihT si na !elpmaxe"));
+            Console.WriteLine(Reverse_Words("elbuod  secaps"));
         }
     }
 }
