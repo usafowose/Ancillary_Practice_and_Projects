@@ -16,7 +16,7 @@ namespace breakCamel
 
             foreach(char letter in input)
             {
-                if( letter == char.ToUpper(letter))
+                if(letter == char.ToUpper(letter))
                 {
                     charList.Add(' ');
                     charList.Add(letter); 
