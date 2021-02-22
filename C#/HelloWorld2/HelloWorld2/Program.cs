@@ -54,7 +54,7 @@ namespace HelloWorld2
             Console.Write("\n");
 
             double oneEighth = 1.0 / 16.0;
-            Console.WriteLine(oneEighth); 
+            Console.WriteLine(oneEighth.ToString()); 
 
             //Working with Decimal Types
             // Decimal Range
