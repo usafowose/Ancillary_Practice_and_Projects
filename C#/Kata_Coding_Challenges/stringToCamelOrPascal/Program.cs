@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic; 
 
 //Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).
 
@@ -14,7 +15,17 @@ namespace stringToCamelOrPascal
         {
             string statement = "";
             string[] splitString = input.Split('-');
-            splitString = string.Join("", splitString).Split('_');
+
+            List<Array> stringList = new List<Array>(); 
+            for(int i =0; i<splitString.Length; i++)
+            {
+            if (string.Join("", splitString).Contains('_'))
+                        {
+                 
+                        }
+            }
+            
+
 
                 if (input[0] == char.ToUpper(input[0]))
                 {
@@ -39,7 +50,7 @@ namespace stringToCamelOrPascal
 
         static void Main(string[] args)
         {
-            Console.WriteLine(CamelOrPascal("the-stealth-warrior"));
+            Console.WriteLine(CamelOrPascal("qrnnksavkb_Fdeceebiif-Piqkiujhaw"));
         }
     }
 }
