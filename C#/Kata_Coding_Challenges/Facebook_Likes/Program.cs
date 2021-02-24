@@ -33,7 +33,7 @@ namespace Facebook_Likes
         }
         static void Main(string[] args)
         {
-            string[] names = { "Alex", "Jacob", "Mark", "Max" }; 
+            string[] names = { "Alex" }; 
             Console.WriteLine(Likes(names));
         }
     }
