@@ -19,20 +19,48 @@ namespace stringToCamelOrPascal
             string[] splitString = input.Split('-');
 
             List<string> stringList = new List<string>();
-            int counter = 0; 
+            List<string> splitAgain = new List<string>(); 
+            int counter1 = 0;
+            int counter2 = 0; 
 
             foreach (string str in splitString)
             {
                 if (str.Contains('_'))
                 {
-                    counter++;
-                    string[] splitAgain = str.Split('_');
-                    stringList.AddRange(splitAgain);
+                    string[] moveToSplitAgain = str.Split('_');
+                    splitAgain.AddRange(moveToSplitAgain);
                 }
+                counter1++; 
+     
             }
 
-            stringList.Add(splitString[counter]);
+            //use for loop here 
+            //compare counter1 value from prev loop to i each time. 
+            //when i equals counter1 -1 val
+                // add splitAgain to stringList, then continue on with loop
+            while (counter2 < splitString.Length)
+            {
+                if (counter2 == counter1 -1 && counter2 < splitString.Length)
+                {
+                    stringList.AddRange(splitAgain);
+                    counter2++;
+                } else if (counter2 == counter1 -1)
+                {
+                    stringList.AddRange(splitAgain);
+                    break;
+                }
+                stringList.Add(splitString[counter2]);
+                counter2++; 
+            }
+            
             splitString = stringList.ToArray(); 
+
+
+
+
+
+
+
 
 
             if (input[0] == char.ToUpper(input[0]))
