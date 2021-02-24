@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "breakCamel", "breakCamelCas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse_Words", "Reverse_Words\Reverse_Words.csproj", "{50B361B5-1E8C-4712-9EFC-8EC383170601}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facebook_Likes", "Facebook_Likes\Facebook_Likes.csproj", "{985A8601-0E85-42EF-8D68-BE9776C14510}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{50B361B5-1E8C-4712-9EFC-8EC383170601}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50B361B5-1E8C-4712-9EFC-8EC383170601}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50B361B5-1E8C-4712-9EFC-8EC383170601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985A8601-0E85-42EF-8D68-BE9776C14510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985A8601-0E85-42EF-8D68-BE9776C14510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985A8601-0E85-42EF-8D68-BE9776C14510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985A8601-0E85-42EF-8D68-BE9776C14510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
