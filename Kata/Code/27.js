@@ -6,4 +6,4 @@
 
 const reverseWords = str => str.split(" ").map(cv => [...cv].reverse().join('')).join(' ');
 
-console.log(reverseWords("elpirt   secaps")); 
+console.log(reverseWords("elpirt  secaps")); 
