@@ -6,7 +6,11 @@ namespace WorkingWithDates
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DateTime dateTime = new DateTime(2021, 2, 24);
+            Console.WriteLine(dateTime);
+
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now);
         }
     }
 }
