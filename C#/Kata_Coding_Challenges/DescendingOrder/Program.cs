@@ -39,7 +39,7 @@ namespace DescendingOrder
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(Descending(45125)); 
+            Console.WriteLine(Descending(68962153)); 
         }
     }
 }
