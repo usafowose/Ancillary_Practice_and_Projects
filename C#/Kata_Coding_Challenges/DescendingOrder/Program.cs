@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DescendingOrder
 {
@@ -11,13 +13,34 @@ namespace DescendingOrder
         // Input: 42145 Output: 54421
         public static int Descending(int number)
         {
+            List<int> NumList = new List<int>();
+            string numStr = number.ToString();
 
-            return 5;  
+            foreach (char digStr in numStr)
+            {
+                NumList.Add(int.Parse(digStr.ToString()));
+            }
+
+            NumList.Sort();
+            NumList.Reverse();
+
+            int result = 0;
+            int[] numArr = NumList.ToArray();
+
+            foreach (int num in numArr)
+            {
+                result = (result * 10) + num; 
+            }
+
+            return result;
+
+           
+
         }
         static void Main(string[] args)
         {
             Console.WriteLine(Descending(45125)); 
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
