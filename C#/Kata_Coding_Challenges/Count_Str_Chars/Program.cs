@@ -9,10 +9,10 @@ namespace Count_Str_Chars
     {
         static Dictionary<char, int> Count(string inputStr)
         {
-            Dictionary<char, int> Tally = new Dictionary<char, int>();
+            IDictionary<char, int> Tally = new Dictionary<char, int>();
             if (string.IsNullOrEmpty(inputStr))
             {
-                return Tally; 
+                return (Dictionary<char, int>)Tally; 
             }
 
             foreach(char letter in inputStr)
@@ -25,7 +25,7 @@ namespace Count_Str_Chars
                     Tally.Add(letter, 1);
                 }
             }
-            return Tally; 
+            return (Dictionary<char, int>)Tally;  
         }
         static void Main(string[] args)
         {
