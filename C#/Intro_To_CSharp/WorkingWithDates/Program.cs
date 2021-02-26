@@ -16,12 +16,12 @@ namespace WorkingWithDates
             DateTime today = DateTime.Today;
             Console.WriteLine(today);
 
-            Console.WriteLine(today.ToLocalTime());
+            Console.WriteLine(today.ToLongDateString());
             Console.WriteLine(today.Hour);
             Console.WriteLine(today.Minute);
             Console.WriteLine(today.DayOfWeek);
 
-            Console.WriteLine(now.ToLocalTime());
+            Console.WriteLine(now.ToLongDateString());
             Console.WriteLine(now.Hour);
             Console.WriteLine(now.Minute);
             Console.WriteLine(now.DayOfWeek);
