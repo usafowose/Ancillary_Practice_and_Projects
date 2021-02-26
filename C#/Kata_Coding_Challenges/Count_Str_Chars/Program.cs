@@ -29,7 +29,7 @@ namespace Count_Str_Chars
         }
         static void Main(string[] args)
         {
-            Console.WriteLine(Count("dictionary"));
+            Console.WriteLine(Count(""));
         }
     }
 }
