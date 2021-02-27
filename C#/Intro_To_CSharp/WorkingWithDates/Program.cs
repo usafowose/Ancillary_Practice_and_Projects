@@ -17,16 +17,18 @@ namespace WorkingWithDates
             Console.WriteLine(today);
 
             Console.WriteLine(today.ToLongDateString());
+            Console.WriteLine();
             Console.WriteLine(today.Hour);
             Console.WriteLine(today.Minute);
+            Console.WriteLine();
             Console.WriteLine(today.DayOfWeek);
 
             Console.WriteLine(now.ToLongDateString());
             Console.WriteLine(now.Hour);
             Console.WriteLine(now.Minute);
             Console.WriteLine(now.DayOfWeek);
-
-
+            
+      
 
         }
     }
