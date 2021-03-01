@@ -34,6 +34,10 @@ namespace WorkingWithDates
             var twoDaysFromNow = tomorrow.Add(timeSpan01).ToString("dddd, MMMM dd, yyyy hh:mm:ss");
             Console.WriteLine(twoDaysFromNow);
 
+            //Properties of AS TimeSpan
+            var oneHourAndSomeChange = new TimeSpan(1, 10, 20);
+            Console.WriteLine("Minutes: " + oneHourAndSomeChange.Minutes);
+            Console.WriteLine("Total Minutes: " + oneHourAndSomeChange.TotalMinutes);
 
 
             //Console.WriteLine("------------------------");
