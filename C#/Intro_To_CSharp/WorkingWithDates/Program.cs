@@ -23,7 +23,7 @@ namespace WorkingWithDates
             Console.WriteLine(now.ToShortDateString());
             Console.WriteLine(now.ToLongTimeString());
             Console.WriteLine(now.ToShortTimeString());
-            Console.WriteLine(now.ToString("dddd, MMMM d, yyyy hh:mm:ss"));
+            Console.WriteLine(now.ToString("dddd, MMMM dd yyyy hh:mm:ss"));
 
 
             //Console.WriteLine("------------------------");
