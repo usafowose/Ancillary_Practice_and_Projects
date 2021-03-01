@@ -18,12 +18,22 @@ namespace WorkingWithDates
             //Modifying DateTime Objects
             DateTime tomorrow = now.AddDays(1);
             DateTime yesterday = now.AddDays(-1);
+                                                                                                              
 
             Console.WriteLine(now.ToLongDateString());
             Console.WriteLine(now.ToShortDateString());
             Console.WriteLine(now.ToLongTimeString());
             Console.WriteLine(now.ToShortTimeString());
             Console.WriteLine(now.ToString("dddd, MMMM dd yyyy hh:mm:ss"));
+
+            //Using TimeSpan type
+            var timeSpan1 = new TimeSpan(2, 4, 10);
+            var timeSpan2 = new TimeSpan(1, 0, 0);
+            var timeSpan01 = TimeSpan.FromHours(24);
+
+            var twoDaysFromNow = tomorrow.Add(timeSpan01).ToString("dddd, MMMM dd, yyyy hh:mm:ss");
+            Console.WriteLine(twoDaysFromNow);
+
 
 
             //Console.WriteLine("------------------------");
