@@ -39,6 +39,9 @@ namespace WorkingWithDates
             Console.WriteLine("Minutes: " + oneHourAndSomeChange.Minutes);
             Console.WriteLine("Total Minutes: " + oneHourAndSomeChange.TotalMinutes);
 
+            //Adding To Our TimeSpan 
+            Console.WriteLine("Adding 10 Minutes To An Hour: " + timeSpan2.Add(new TimeSpan(0,10,0)));
+
 
             //Console.WriteLine("------------------------");
             //Console.WriteLine(today);
