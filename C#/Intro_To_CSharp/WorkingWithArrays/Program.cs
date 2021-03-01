@@ -21,9 +21,37 @@ namespace WorkingWithArrays
 
             string[] names = { "Andrew", "Fikayo", "Mobolaji", "Jimmy", "Simeon" };  //Initializing the Array -- Providing Values In Declaration
 
-            names[3] = "Follies"; //Re-Assigning A Value to Elem @ 3rd Index;
+            names[3] = "Faughlice"; //Re-Assigning A Value to Elem @ 3rd Index;
             // names[5] = "Non-Existent Sibling"; //Exception Thrown: Index was outside the bounds of the array --> arr was initialized @ 5 vals, but I attemot to access 6th val (5th index)
             return names;
+        }
+
+        static int[] ArraysWithNums() 
+        {
+            //Different Ways To Initialize a SinglDim Array Upon Declaration
+            int[] singleDimension = { 1, 2, 3, 4, 5 };
+            int[] singleDimension2 = new int[] { 2, 4 };
+            int[] singleDimension3 = new int[4] { 0, 2, 4, 6 };
+
+
+
+            int[,] matrix2D = new int[3, 5];
+            int[,] matrix2DOne = new int[3, 5]
+            {
+                {1, 2, 3, 4, 5 },
+                {6, 7, 8, 9, 10 },
+                {11, 12, 13, 14, 15 }
+            };
+
+            int toGet12 = matrix2DOne[2, 1];
+            Console.WriteLine(toGet12 + 5); //Should return 17; 
+
+            
+            return new int[] { 1, 2 }; 
+
+
+
+            Console.WriteLine(singleDimension);
         }
 
         static void Enumerate(string[] names)
