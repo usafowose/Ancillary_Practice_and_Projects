@@ -26,7 +26,7 @@ namespace WorkingWithArrays
             return names;
         }
 
-        static void ArraysWithNums() 
+        static void NormalAndRecangularArrs() 
         {
             //Different Ways To Initialize a SinglDim Array Upon Declaration
             int[] singleDimension = { 1, 2, 3, 4, 5 };
@@ -51,7 +51,7 @@ namespace WorkingWithArrays
 
             //Different Ways To Initialize a 3-Dimensional Array Upon Declaration; 
             // If Only Dimensions Are Known
-            string[,,] rubix = [3, 3, 3];
+            string[,,] rubix = new string[3, 3, 3];
 
             string[,,] rubix2 = new string[3,3,3] {
             {
@@ -73,11 +73,43 @@ namespace WorkingWithArrays
             }
             };
 
+        }
 
-            
+
+        static void JaggedArrays() 
+        {
+            //Declaring Jagged Arrayh With Top-Level # Of Elems (Rows)
+            var array = new int[3][];
+
+            //Initialize Each Row To Be An Array of Different Lengths
+            array[0] = new int[4];
+            array[1] = new int[5];
+            array[2] = new int[3]; 
+
+            //Initialize Values For Each Elem In 1st Row
+            for (int i =0; i<array[0].Length; i++)
+            {
+                array[0][i] = i;
+                Console.WriteLine(array[0][i]);
+            }
+
+            for (int i = 0; i < array[1].Length; i++)
+            {
+                array[1][i] = i;
+                Console.WriteLine(array[1][i]);
+            }
+
+            for (int i = 0; i < array[2].Length; i++)
+            {
+                array[2][i] = i;
+                Console.WriteLine(array[2][i]);
+            }
 
 
-           
+            Console.WriteLine(array[0][0]); 
+
+
+
         }
 
         static void Enumerate(string[] names)
@@ -101,8 +133,9 @@ namespace WorkingWithArrays
         static int Length = Count(ArrayPractice()); 
         static void Main(string[] args)
         {
-            Enumerate(ArrayPractice());
-            ArraysWithNums();
+            JaggedArrays(); 
+            //Enumerate(ArrayPractice());
+            NormalAndRecangularArrs();
             Console.WriteLine($"The length of the array is {Program.Length}"); 
             //Console.WriteLine("Hello World!");
         }
