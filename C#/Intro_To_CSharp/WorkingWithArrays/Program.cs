@@ -26,7 +26,7 @@ namespace WorkingWithArrays
             return names;
         }
 
-        static int[] ArraysWithNums() 
+        static void ArraysWithNums() 
         {
             //Different Ways To Initialize a SinglDim Array Upon Declaration
             int[] singleDimension = { 1, 2, 3, 4, 5 };
@@ -34,8 +34,10 @@ namespace WorkingWithArrays
             int[] singleDimension3 = new int[4] { 0, 2, 4, 6 };
 
 
-
+            //Different Ways To Initialize a 2-Dimensional Array Upon Declaration;
+            //If Only Dimensions Are Previously Known, 
             int[,] matrix2D = new int[3, 5];
+            //If Dimensions AND Values Are Previously Known
             int[,] matrix2DOne = new int[3, 5]
             {
                 {1, 2, 3, 4, 5 },
@@ -45,13 +47,37 @@ namespace WorkingWithArrays
 
             int toGet12 = matrix2DOne[2, 1];
             Console.WriteLine(toGet12 + 5); //Should return 17; 
+            Console.WriteLine(toGet12);
+
+            //Different Ways To Initialize a 3-Dimensional Array Upon Declaration; 
+            // If Only Dimensions Are Known
+            string[,,] rubix = [3, 3, 3];
+
+            string[,,] rubix2 = new string[3,3,3] {
+            {
+                {"red", "red", "red" },
+                {"red", "red", "red" },
+                {"red", "red", "red" },
+               
+            },
+            {
+                {"red", "red", "red" },
+                {"red", "red", "red" },
+                {"red", "red", "red" },
+                
+            },
+            {
+                {"red", "red", "red" },
+                {"red", "red", "red" },
+                {"red", "red", "red" }               
+            }
+            };
+
 
             
-            return new int[] { 1, 2 }; 
 
 
-
-            Console.WriteLine(singleDimension);
+           
         }
 
         static void Enumerate(string[] names)
@@ -76,6 +102,7 @@ namespace WorkingWithArrays
         static void Main(string[] args)
         {
             Enumerate(ArrayPractice());
+            ArraysWithNums();
             Console.WriteLine($"The length of the array is {Program.Length}"); 
             //Console.WriteLine("Hello World!");
         }
