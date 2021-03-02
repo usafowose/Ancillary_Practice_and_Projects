@@ -87,28 +87,23 @@ namespace WorkingWithArrays
             array[2] = new int[3]; 
 
             //Initialize Values For Each Elem In 1st Row
-            for (int i =0; i<array[0].Length; i++)
+            for (int i =0, j=0; i<array[j].Length; i++)
             {
-                array[0][i] = i;
-                Console.WriteLine(array[0][i]);
+                array[j][i] = i;
+                Console.WriteLine(array[j][i]);
             }
 
-            for (int i = 0; i < array[1].Length; i++)
+            for (int i = 0, j=1; i < array[j].Length; i++)
             {
-                array[1][i] = i;
-                Console.WriteLine(array[1][i]);
+                array[j][i] = i;
+                Console.WriteLine(array[j][i]);
             }
 
-            for (int i = 0; i < array[2].Length; i++)
+            for (int i = 0, j=2; i < array[j].Length; i++)
             {
-                array[2][i] = i;
-                Console.WriteLine(array[2][i]);
+                array[j][i] = i;
+                Console.WriteLine(array[j][i]);
             }
-
-
-            Console.WriteLine(array[0][0]); 
-
-
 
         }
 
