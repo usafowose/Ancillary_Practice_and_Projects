@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C#",
+    "\\C#\\Intro_To_CSharp",
+    "\\C#\\Intro_To_CSharp\\WorkingWithArrays",
+    "\\Kata\\Code"
   ],
+  "SelectedNode": "\\C#\\Intro_To_CSharp\\WorkingWithArrays\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
