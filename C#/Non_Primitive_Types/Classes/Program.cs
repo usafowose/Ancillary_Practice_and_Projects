@@ -6,7 +6,7 @@ namespace Classes
     {
         public string Name;
         public byte Age;
-        public char Gender;
+        public string Gender;
         public byte Weight;
 
         public static int Walk(int distance) => distance;
@@ -31,7 +31,7 @@ namespace Classes
             {
                 Name = "Andrew",
                 Age = 23,
-                Gender = 'M',
+                Gender = "Male",
                 Weight = 230
             };
 

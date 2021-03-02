@@ -1,0 +1,13 @@
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.exe
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.deps.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.runtimeconfig.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.runtimeconfig.dev.json
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\bin\Debug\netcoreapp3.1\Non_Primitive_Types.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.csprojAssemblyReference.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.AssemblyInfoInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.AssemblyInfo.cs
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.dll
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.pdb
+C:\Users\Owner\Class\Ancillary_Projects_Practice\C#\Non_Primitive_Types\Non_Primitive_Types\obj\Debug\netcoreapp3.1\Non_Primitive_Types.genruntimeconfig.cache
