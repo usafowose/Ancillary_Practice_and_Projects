@@ -1,0 +1,9 @@
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\b\Calculator\Debug\net5.0\Calculator.deps.json
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\b\Calculator\Debug\net5.0\Calculator.dll
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\b\Calculator\Debug\net5.0\ref\Calculator.dll
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\Calculator.AssemblyInfoInputs.cache
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\Calculator.AssemblyInfo.cs
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\Calculator.csproj.CopyComplete
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\Calculator.dll
+C:\Users\v-afowose\Personal_Learning\C#\Intro To Test Driven Dev in CSharp\.vs\Intro To Test Driven Dev in CSharp\v16\lut\0\i\Calculator\Debug\net5.0\ref\Calculator.dll
