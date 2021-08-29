@@ -49,14 +49,14 @@ class Card {
     }
 
     chargeCard = (daysAfterOpened, charge) => {
-        this.logCharge(daysAfterOpened, charge)
-        this.currentBalance = this.getOutstandingBalance(0)
-        return ` Balance: ${this.currentBalance}`
+        this.logCharge(daysAfterOpened, charge);
+        this.currentBalance = this.getOutstandingBalance(0);
+        return ` Balance: ${this.currentBalance}`;
     }
 
     makePayment = (daysAfterOpened, amount) => {
-        this.logPayment(daysAfterOpened, amount)
-        this.currentBalance = this.getOutstandingBalance(0)
+        this.logPayment(daysAfterOpened, amount);
+        this.currentBalance = this.getOutstandingBalance(0);
         // return `Balance: ${this.currentBalance}`
     }
 
@@ -71,7 +71,7 @@ class Card {
     currentInterestAccrued = (daysAfterOpened) => {
         let interestLog = [];
 
-        interestLog.push(this.startingBalance - (this.startingBalance + this.transactions.reduce((acc, cv) => acc + cv[Object.keys(cv)], 0) * (this.dailyAPR * daysAfterOpened)))
+        interestLog.push(this.startingBalance - (this.startingBalance + this.transactions.reduce((acc, cv) => acc + cv[Object.keys(cv)], 0) * (this.dailyAPR * daysAfterOpened)));
         return interestLog;
     }
 
@@ -81,14 +81,14 @@ class Card {
 
         this.transactions.forEach((obj, i, arr) => {
             if (dailySummary.hasOwnProperty([Object.keys(obj)])) {
-                dailySummary[Object.keys(obj)] = dailySummary[Object.keys(obj)] + obj[Object.keys(obj)]
+                dailySummary[Object.keys(obj)] = dailySummary[Object.keys(obj)] + obj[Object.keys(obj)];
             } else {
-                dailySummary[Object.keys(obj)] = obj[Object.keys(obj)]
+                dailySummary[Object.keys(obj)] = obj[Object.keys(obj)];
             }
         });
 
         for (let day in dailySummary) {
-            dailySummArr.push({ [day]: dailySummary[day] })
+            dailySummArr.push({ [day]: dailySummary[day] });
         };
 
         return dailySummArr;
@@ -96,8 +96,8 @@ class Card {
     }
     // Retreive balance after day changes
     randomFunc = () => {
-        let days = this.transactions.map(cv => [...Object.keys(cv)])
-        let arrayofDays = [].concat(...days).filter((cv, i, arr) => arr.indexOf(cv) === i)
+        let days = this.transactions.map(cv => [...Object.keys(cv)]);
+        let arrayofDays = [].concat(...days).filter((cv, i, arr) => arr.indexOf(cv) === i);
         // return arrayofDays;
     }
 }
