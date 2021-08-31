@@ -1,89 +1,128 @@
-// 1. Each card has an APR and Credit Limit.
-// 2. Interest is calculated daily, starting the day after the account is opened, at the close of each day.
-// 3. Calculated interest becomes due at the close every 30 days after the account has been opened.
-// e.g., asking for the total outstanding balance 15, 28, or 29 days after opening will give the outstanding balance, but asking for balance 30 days after opening will give the outstanding balance plus the accrued interest.
+function formatString(str: string, ...val: string[]) {
+    for (let index = 0; index < val.length; index++) {
+        str = str.replace(`{${index}}`, val[index]);
+    }
+    return str;
+}
 
-// The software should be able to:
-// * Create an account (e.g. opening a new credit card)
-// * Keep track of charges (e.g. card swipes)
-// * Keep track of payments
-// * Provide the total outstanding balance as of any given day
+function round(number: number, decimals?: number) {
+    decimals = decimals ? decimals : 0;
+    if (number[number.toString().length - 1] >= 5) {
+        return (Math.ceil(number * Math.pow(10, decimals)) / Math.pow(10, decimals));
+    } else {
+        return (Math.floor(number * Math.pow(10, decimals)) / Math.pow(10, decimals));
+    }
+}
 
-// Test Scenario 1
-// A customer opens a credit card with a $1, 000.00 limit at a 35 % APR.
-// The customer charges $500 on opening day (outstanding balance becomes $500).
-// The total outstanding balance owed 30 days after opening should be $514.38.
-// 500 * (0.35 / 365) * 30 = 14.38
+export interface AccountLog {
+    [key: string]: number[];
+}
 
-// Test Scenario 2
-// A customer opens a credit card with a $1, 000.00 limit at a 35 % APR.
-// The customer charges $500 on opening day(outstanding balance becomes $500).
-// 15 days after opening, the customer pays $200(outstanding balance becomes $300).
-// 25 days after opening, the customer charges another $100(outstanding balance becomes $400).
-// The total outstanding balance owed 30 days after opening should be $411.99.
-// (500 * 0.35 / 365 * 15) + (300 * 0.35 / 365 * 10) + (400 * 0.35 / 365 * 5) = 11.99
+export interface Statement {
+    charges: AccountLog;
+    payments: AccountLog;
+}
 
-
-// class Account
-// private member var day -> (changes)
-// private member var interest -> (changes, starts day after account opening date)
-// private member var balance -> (changes, can be requested @ any time)
-// constructor(APR, limit) {this.dailyInterestRate = APR / 36500}
-// private member methods 
-// pay()
-// swipe()
-// incrementDay(): void
-// updateEODInterest;
-// interest becomes due after 30 days -> when day = 30, interest is due (added to bill)
-// interest is calculated daily regardless
-// user can ask for total outstanding balance anytime. balance requested any time before 30 days is just balance, else balance + interest;
-// --------------must-haves------------
-// ability to create an account
-// keep track of charges
-// keep track of payments
-// provide balance at any given day
+export enum TransactionError {
+    CREDITLIMIT = "Charge was declined due to insufficient credit",
+    BALANCEPAID = "Payment exceeds balance. Payment must be ${0} or less"
+}
 
 export class Account {
-    private _day: number;
-    private _accruedInterest: number;
-    private _outstandingBalance: number;
+    private _day: number = 0;
+    private _accruedInterest: number = 0;
+    private _outstandingBalance: number = 0;
+    private _statement: Statement = {
+        charges: {},
+        payments: {}
+    };
     private _dailyInterestRate: number;
     constructor(apr: number, private _limit: number) {
-        this._day = 0;
         this._dailyInterestRate = apr / 36500;
-        this._accruedInterest = 0;
-        this._outstandingBalance = 0;
     }
 
-    public get accruedInterest() {
-        return this._accruedInterest;
+    public get statement() {
+        return this._statement;
     }
 
     public get outstandingBalance() {
-        return this._day < 30 ? this._outstandingBalance : this._outstandingBalance + this._accruedInterest;
+        return this._day < 30 ? round(this._outstandingBalance, 2) : round(this._outstandingBalance + this._accruedInterest, 2);
     }
 
     public set outstandingBalance(balance: number) {
         this._outstandingBalance = balance;
     }
 
-    public pay = (amount: number): void => {
-        // 
-    }
+    public pay = (amount: number): void | string => {
+        if (amount < 0) {
+            this.charge(amount);
+        }
 
-    private _charge = (amount: number): void => {
-        if (this._validateCharge(amount)) {
-            this.outstandingBalance += amount;
+        var { _day, statement, _validatePayment } = this;
+        if (_validatePayment(amount)) {
+            const todaysPayments = statement.payments[_day];
+            this.outstandingBalance -= amount;
+
+            if (!todaysPayments) {
+                statement.payments[_day] = [amount];
+            } else {
+                this.statement.payments[this._day] = [...this.statement.payments[this._day], amount];
+            }
+        } else {
+            return formatString(TransactionError.BALANCEPAID.toString(), `${this.outstandingBalance}`);
         }
     }
 
-    private _incrementDay = (): void => {
-        this._day++;
-        this._updateEODInterest();
+    public charge = (amount: number): void | string => {
+        if (amount < 0) {
+            this.pay(amount);
+        }
+
+        if (this._validateCharge(amount)) {
+            this.outstandingBalance += amount;
+
+            if (!this.statement.charges[this._day]) {
+                this.statement.charges[this._day] = [amount];
+            } else {
+                this.statement.charges[this._day] = [...this.statement.charges[this._day], amount];
+            }
+        } else {
+            return TransactionError.CREDITLIMIT.toString();
+        }
     }
 
-    private _updateEODInterest = (): void => {
-        // UPDATE ACCRUED INTEREST VARIABLE HERE
+    public incrementDay = (days?: number): number | string => {
+        if (!days) {
+            days = 1;
+        }
+
+        if (this._day === 30) {
+            const monthsEndOutstanding = this.outstandingBalance;
+            this._day = 0;
+            this._outstandingBalance = 0;
+            this._accruedInterest = 0;
+            this._statement = {
+                charges: {},
+                payments: {}
+            };
+            return `Statement Due: ${monthsEndOutstanding}`;
+        }
+
+        if (this._day + days <= 30) {
+            this._day += days;
+            this._updateAccruedInterest();
+        } else if (this._day + days > 30) {
+            const daysTillStatement = 30 - this._day;
+            this.incrementDay(daysTillStatement);
+        }
+
+        return this._day;
+    }
+
+    private _updateAccruedInterest = (): void => {
+        const { _outstandingBalance, _dailyInterestRate, statement: { charges, payments } } = this;
+        const daysAccrued = this._day - [...Object.keys(charges), ...Object.keys(payments)].map(cv => Number(cv)).sort((a, b) => b - a)[0];
+        this._accruedInterest += _outstandingBalance * _dailyInterestRate * daysAccrued;
     }
 
     private _validateCharge = (amount: number): boolean => {

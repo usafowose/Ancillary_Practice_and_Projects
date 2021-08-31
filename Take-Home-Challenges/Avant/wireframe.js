@@ -97,7 +97,7 @@ class Card {
     // Retreive balance after day changes
     randomFunc = () => {
         let days = this.transactions.map(cv => [...Object.keys(cv)]);
-        let arrayofDays = [].concat(...days).filter((cv, i, arr) => arr.indexOf(cv) === i);
+        let arrayofDays = [...days].filter((cv, i, arr) => arr.indexOf(cv) === i);
         // return arrayofDays;
     }
 }
