@@ -14,7 +14,7 @@ const increment = (value?: number): ActionType => ({type: 'increment', payload: 
 const decrement = (value?: number): ActionType => ({type: 'decrement', payload: value ?? 1});
 
 const initialState: StoreState = { value: 0 };
-const numberReducer = (state: StoreState = initialState, action?: ActionType): StoreState => {
+const numberReducer = (state: StoreState = initialState, action: ActionType): StoreState => {
   switch(action.type) {
     case 'increment':
       return { value: state.value + action.payload ?? 1 };
