@@ -116,7 +116,9 @@ const ourDepartments = combineReducers({
   policies: policiesReducer
 });
 
-const store = createStore(ourDepartments)
+export const store = createStore(ourDepartments);
 
 store.dispatch(createPolicy({name: 'Andrew', deductible: 500, deposit: 5}));
+store.dispatch(createPolicy({name: 'Jimmy', deductible: 300, deposit: 250}));
+
 console.log(store.getState());
