@@ -61,7 +61,7 @@ const setSearchTerm = (term: string): Action<string> => ({ type: 'searchTerm/set
 const resetSearchTerm = (): Action<never> => ({ type: 'searchTerm/resetTerm' });
 
 const searchTermReducer = (state: AppState, action: Action<any>): AppState => {
-  if ()
+  if (true)
   switch(action.type) {
     case 'searchTerm/setTerm':
       return { ...state, searchTerm: action.payload };
