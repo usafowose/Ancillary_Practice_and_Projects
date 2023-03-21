@@ -110,7 +110,7 @@ class DepthChart {
 const ravensChart = new DepthChart(Position.TE, { id: 1, name: 'Mark Andrews' });
 const aBrown = { id: 3, name: 'Anthony Brown', rank: 3 };
 const tHunt = { id: 2, name: 'Tyler Huntley', rank: 2 };
-const qbs = [aBrown, tHunt];
+const QB = [aBrown, tHunt];
 const zayLike = {
     id: 2,
     name: 'Isaiah Likely',
@@ -121,7 +121,7 @@ const cKolar = {
     name: 'Charlie Kolar',
     rank: 4
 };
-const tes = [zayLike, cKolar];
+const TE = [zayLike, cKolar];
 const jkDobbins = {
     id: 1,
     name: 'JK Dobbins',
@@ -142,10 +142,18 @@ const kenyanDrake = {
     name: 'Kenyan Drake',
     rank: 4
 };
-const rbsToAdd = [kenyanDrake, gusEdwards, jkDobbins, justiceHill];
+const RB = [kenyanDrake, gusEdwards, jkDobbins, justiceHill];
+ravensChart.addMultiplePlayers({ QB, TE, RB, });
+const lJackson = { name: "Lamar Jackson", id: 943, rank: 1, };
+const posq = { name: 'notNice', id: 11, rank: 11 };
+const posr = { name: 'notNice', id: 12, rank: 12 };
+const poss = { name: 'notNice', id: 14, rank: 14 };
+const post = { name: 'notNice', id: 13, rank: 13 };
+const rbs = [posq, posr, poss, post];
+const tes = [...rbs];
 ravensChart.addMultiplePlayers({
-    QB: qbs,
+    RB: rbs,
     TE: tes,
-    RB: rbsToAdd
+    QB: [lJackson]
 });
 console.log(ravensChart.chart);

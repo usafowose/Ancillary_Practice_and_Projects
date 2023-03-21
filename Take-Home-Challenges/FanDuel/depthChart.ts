@@ -137,54 +137,69 @@ class DepthChart {
       }
     }
   }
-
 }
 
 const ravensChart: DepthChart = new DepthChart(Position.TE, {id: 1, name: 'Mark Andrews'});
 
 const aBrown: RankedPlayer = {id: 3, name: 'Anthony Brown', rank: 3};
 const tHunt = {id: 2, name: 'Tyler Huntley', rank: 2};
-const qbs: RankedPlayer[] = [aBrown, tHunt];
+const QB: RankedPlayer[] = [aBrown, tHunt];
 
 const zayLike: RankedPlayer = {
   id: 2,
   name: 'Isaiah Likely',
   rank: 2
 };
+
 const cKolar: RankedPlayer = {
   id: 4,
   name: 'Charlie Kolar',
   rank: 4
 };
-const tes: RankedPlayer[] = [zayLike, cKolar];
 
+const TE: RankedPlayer[] = [zayLike, cKolar];
 
 const jkDobbins: RankedPlayer = {
   id: 1,
   name: 'JK Dobbins',
   rank: 1
 };
+
 const gusEdwards: RankedPlayer = {
   id: 2,
   name: 'Gus Edwards',
   rank: 2
 };
+
 const justiceHill: RankedPlayer = {
   id: 3,
   name: 'Justice Hill',
   rank: 3
 };
+
 const kenyanDrake: RankedPlayer = {
   id: 4,
   name: 'Kenyan Drake',
   rank: 4
 };
-const rbsToAdd = [ kenyanDrake, gusEdwards, jkDobbins, justiceHill ];
+
+const RB: [RankedPlayer, RankedPlayer, RankedPlayer, RankedPlayer] = [ kenyanDrake, gusEdwards, jkDobbins, justiceHill ];
+
+ravensChart.addMultiplePlayers({ QB, TE, RB, });
+
+const lJackson: RankedPlayer = { name: "Lamar Jackson", id: 943, rank: 1, };
+const posq: RankedPlayer = { name: 'notNice', id: 11, rank: 11 };
+const posr: RankedPlayer = { name: 'notNice', id: 12, rank: 12 };
+const poss: RankedPlayer = { name: 'notNice', id: 14, rank: 14 };
+const post: RankedPlayer = { name: 'notNice', id: 13, rank: 13 };
+
+const rbs = [posq, posr, poss, post];
+const tes = [...rbs];
 
 ravensChart.addMultiplePlayers({
-  QB: qbs,
+  RB: rbs,
   TE: tes,
-  RB: rbsToAdd
-})
+  QB: [lJackson]
+});
 
 console.log(ravensChart.chart);
